@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import Literal
-from pydantic import BaseModel, Field, HttpUrl
+from pydantic import BaseModel
 
 
 class ProcessStep(BaseModel):
@@ -40,7 +40,7 @@ class DiagramAnalysis(BaseModel):
 class Evidence(BaseModel):
     claim: str
     value: str | None
-    source_url: HttpUrl | None
+    source_url: str | None
     source_title: str | None
     retrieved_date: str | None
     status: Literal["verified", "supplier_claim", "comparable_only", "unknown"]
@@ -51,7 +51,7 @@ class Candidate(BaseModel):
     requirement_id: str
     manufacturer: str
     model: str
-    product_url: HttpUrl | None
+    product_url: str | None
     recommendation: Literal["recommended", "alternative", "not_qualified"]
     rationale: str
     price: Evidence

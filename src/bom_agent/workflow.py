@@ -18,8 +18,11 @@ def collect_answers(analysis, supplied=None):
     answers=dict(supplied or {})
     for q in analysis.clarification_questions:
         if q.key not in answers:
-            print(f"\n{q.question}\nWhy: {q.why_critical}")
-            answers[q.key]=input("> ").strip() or "Unknown - unresolved"
+            if supplied is not None:
+                answers[q.key] = "Unknown - unresolved; human input required"
+            else:
+                print(f"\n{q.question}\nWhy: {q.why_critical}")
+                answers[q.key]=input("> ").strip() or "Unknown - unresolved"
     return answers
 
 
@@ -31,7 +34,7 @@ def run(args):
     supplied=json.loads(Path(args.assumptions).read_text()) if args.assumptions else None
     confirmed=ConfirmedRequirements(analysis=analysis, human_assumptions=collect_answers(analysis, supplied))
     _write(out.parent/"confirmed_requirements.json", confirmed)
-    bom=research_candidates(confirmed, client, model)
+    bom=research_candidates(confirmed, client, model, out.parent / "research_batches")
     _write(out.parent/"bom.json", bom); write_page(out, confirmed, bom)
     print(f"Generated {out}")
 
@@ -44,14 +47,15 @@ def render_only(args):
 
 
 def main(argv=None):
+    import sys
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0] == "render":
+        p=argparse.ArgumentParser(description="Render saved BOM JSON")
+        p.add_argument("command"); p.add_argument("bom"); p.add_argument("--confirmed"); p.add_argument("--output", required=True)
+        render_only(p.parse_args(argv)); return
     p=argparse.ArgumentParser(description="Diagram-to-interactive-BOM agent")
-    sub=p.add_subparsers(dest="command")
-    r=sub.add_parser("render"); r.add_argument("bom"); r.add_argument("--confirmed"); r.add_argument("--output", required=True)
-    p.add_argument("image", nargs="?"); p.add_argument("--assumptions"); p.add_argument("--output", default="generated/purchasing_page.html")
-    args=p.parse_args(argv)
-    if args.command=="render": render_only(args)
-    elif args.image: run(args)
-    else: p.error("provide an image or use the render subcommand")
+    p.add_argument("image"); p.add_argument("--assumptions"); p.add_argument("--output", default="generated/purchasing_page.html")
+    run(p.parse_args(argv))
 
 
 if __name__ == "__main__": main()

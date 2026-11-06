@@ -1,0 +1,776 @@
+{
+  "candidates": [
+    {
+      "requirement_id": "E1",
+      "manufacturer": "Eagle Group",
+      "model": "T3096SEB",
+      "product_url": "https://eaglegrp.com/sub_categories/deluxe-series-worktables-flat-top-stainless-steel-legs-with-undershelf/",
+      "recommendation": "recommended",
+      "rationale": "Conditional shortlist recommendation for one continuous shared loading surface, not a complete loading station. Preserve O1/O2 access and the drawn supply arrangement; dimensional fit requires human approval.",
+      "price": {
+        "claim": "Exact-model advertised unit price",
+        "value": "USD 1,399.00 each",
+        "source_url": "https://www.webstaurantstore.com/eagle-group-t3096seb-30-x-96-stainless-steel-deluxe-work-table-with-stainless-steel-undershelf/575T3096SEB.html",
+        "source_title": "Eagle Group T3096SEB — WebstaurantStore",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Budgetary listing price; obtain a delivered quotation including tax, freight and integration."
+      },
+      "lead_time": {
+        "claim": "Exact-model advertised dispatch estimate",
+        "value": "Usually ships in 2 weeks from manufacturer",
+        "source_url": "https://www.webstaurantstore.com/eagle-group-t3096seb-30-x-96-stainless-steel-deluxe-work-table-with-stainless-steel-undershelf/575T3096SEB.html",
+        "source_title": "Eagle Group T3096SEB — WebstaurantStore",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Listing states lead times vary with manufacturer stock; not a delivery commitment."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Exact-model surface dimensions and supporting construction",
+          "value": "30 × 96-inch flat top; six stainless-steel legs and stainless-steel undershelf.",
+          "source_url": "https://eaglegrp.com/sub_categories/deluxe-series-worktables-flat-top-stainless-steel-legs-with-undershelf/",
+          "source_title": "Eagle Group — Deluxe flat-top worktables",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Manufacturer explicitly lists T3096SEB; adequate space for all supply stations is not established."
+        },
+        {
+          "claim": "Manufacturer-specified tabletop material",
+          "value": "16-gauge type 304 polished stainless steel.",
+          "source_url": "https://eaglegrp.com/sub_categories/deluxe-series-worktables-flat-top-stainless-steel-legs-with-undershelf/",
+          "source_title": "Eagle Group — Deluxe flat-top worktables",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Material specification does not establish complete food-contact, cleaning or IP67 qualification."
+        }
+      ],
+      "qualification_gaps": [
+        "Confirm footprint, working height, load capacity, operator reach and access for both O1 and O2.",
+        "Define ingredient containers, replenishment tasks and fixtures without changing the drawn station arrangement.",
+        "Food-contact documentation, required certifications, cleaning compatibility and interpretation of IP67 for this passive surface remain blocking.",
+        "Confirm suitability for 36–40°F and the actual condensation conditions.",
+        "Robot safeguarding and loading interfaces require integrator design."
+      ],
+      "next_action": "Request a quantity-one quotation and exact-model compliance documents; approve a dimensioned layout and robot safety assessment before purchase."
+    },
+    {
+      "requirement_id": "E2",
+      "manufacturer": "Dorner",
+      "model": "AquaGard LP Flat Belt End Drive, 72EM configurable model",
+      "product_url": "https://www.dornerconveyors.com/products/sanitary-stainless-steel-conveyors/aquagard-lp-conveyors",
+      "recommendation": "recommended",
+      "rationale": "Conditional recommendation for the single drawn cracker-packet conveyor. This identifies a specific configurable conveyor model, not a completed orderable SKU; packet specifications and supplier configuration are still required.",
+      "price": {
+        "claim": "Price for the required configured conveyor",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain a USD quotation covering conveyor, motor, controller, supports, guiding and integration."
+      },
+      "lead_time": {
+        "claim": "Lead time for the required configured conveyor",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "No configuration-specific shipment commitment established."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Flat-belt end-drive model and configuration scope",
+          "value": "Manufacturer defines the 72EM order-code structure; belt widths 70–457 mm and conveyor lengths 500–5,485 mm. Gearmotor and mounting package are ordered separately.",
+          "source_url": "https://www.dornerconveyors.com/wp-content/uploads/2022/08/Dorner_AquaGard_LP_A4_Manual_0123Fweb.pdf",
+          "source_title": "Dorner AquaGard LP Engineering Manual — Flat Belt End Drive, page 6",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Do not select dimensions, belt or drive until packet samples and layout are approved."
+        },
+        {
+          "claim": "Cleaning capability of the flat-belt end-drive model",
+          "value": "Specified for wipe-down and low-pressure washdown with non-caustic solutions.",
+          "source_url": "https://www.dornerconveyors.com/wp-content/uploads/2022/08/Dorner_AquaGard_LP_A4_Manual_0123Fweb.pdf",
+          "source_title": "Dorner AquaGard LP Engineering Manual — Flat Belt End Drive, page 6",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "This is not evidence of IP67 or compatibility with an unspecified sanitation procedure."
+        }
+      ],
+      "qualification_gaps": [
+        "Complete orderable SKU, exact belt, motor, controller, supports and guiding remain unresolved.",
+        "Packet dimensions, mass, film friction, fragility, count per plate and required pick orientation are unknown.",
+        "Demonstrate damage-free handling and repeatable robotic presentation with actual packets.",
+        "Confirm 36–40°F operation, condensation tolerance and exact-component ingress ratings.",
+        "Establish whether contact is exclusively with intact wrappers; obtain food-contact documentation and IP67 evidence wherever the user’s rule applies.",
+        "Validate required packet rate, duty cycle, robot synchronization and safeguarding; 200 acceptable plates/hour is not demonstrated."
+      ],
+      "next_action": "Send packet samples and site requirements to Dorner; obtain a complete quantity-one configured BOM, USD price, lead time and documented cold-room presentation trial before purchase."
+    },
+    {
+      "requirement_id": "E3",
+      "manufacturer": "Key Technology",
+      "model": "Iso-Flo Vibratory Conveyor — application-engineered configuration",
+      "product_url": "https://www.key.net/en/products/iso-flo-vibratory-conveyor/",
+      "recommendation": "recommended",
+      "rationale": "Recommended for supplier trials and quotation, not purchase approval. Evaluate initially for the explicitly annotated first cheese stream; retain three separate presentation positions without assuming three conveyor purchases.",
+      "price": {
+        "claim": "Exact configured-equipment price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain an application-specific quotation; no verified exact-configuration price."
+      },
+      "lead_time": {
+        "claim": "Exact configured-equipment delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain supplier confirmation; no verified delivery commitment."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Product-handling motion",
+          "value": "Manufacturer describes low-amplitude, high-frequency movement intended to prevent product damage.",
+          "source_url": "https://www.key.net/en/products/iso-flo-vibratory-conveyor/",
+          "source_title": "Iso-Flo Vibratory Conveyor",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Does not establish successful feeding or robotic presentation of the specified cheddar, Flagship pieces, or brie wedges."
+        },
+        {
+          "claim": "Sanitation-oriented construction",
+          "value": "Iso-Flo brochure specifies open-frame design, sanitary manufacturing finishes, and a stainless-steel Iso-Drive.",
+          "source_url": "https://www.key.net/wp-content/uploads/2022/08/BR_Iso-Flo_161108_US.pdf",
+          "source_title": "Iso-Flo Vibratory Conveyors",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Construction features are not proof of food-contact compliance, certification, or IP67 for a quoted configuration."
+        }
+      ],
+      "qualification_gaps": [
+        "Exact orderable configuration, dimensions, controls, and food-contact materials remain unspecified; this is not a purchase-ready SKU.",
+        "IP67 compliance and required certifications are unverified for the proposed assembly.",
+        "Test actual cheese geometry, wrapping, adhesion, fragility, and pick accessibility at 36–40 F.",
+        "Confirm whether vibration is appropriate for streams two and three; preserve separation regardless of mechanism.",
+        "Demonstrate replenishment and feeding performance sufficient for 200 acceptable plates/hour."
+      ],
+      "next_action": "Submit samples of all three cheeses and request a first-stream trial plus a quotation defining contact materials, cleaning compatibility, utilities, enclosure ratings, footprint, price, and lead time. Do not order three feeders by default."
+    },
+    {
+      "requirement_id": "E4",
+      "manufacturer": "Dorner",
+      "model": "AquaPruf Flat Belt End Drive Conveyor — 74E configuration",
+      "product_url": "https://www.dornerconveyors.com/wp-content/uploads/2021/10/Dorner_AquPruf_Manual_0426e.pdf",
+      "recommendation": "alternative",
+      "rationale": "Conditional conveyor-based alternative for the single apple presentation station, not a confirmed baseline mechanism. Evaluate only if trials show that a moving belt improves robotic presentation over manually replenished presentation.",
+      "price": {
+        "claim": "Exact configured-equipment price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "No verified price for the required configuration."
+      },
+      "lead_time": {
+        "claim": "Exact configured-equipment delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "No verified configuration-specific commitment; generic delivery advertising is not applied."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Specific conveyor configuration and dimensional options",
+          "value": "Engineering manual identifies the Flat Belt End Drive Conveyor with ordering prefix 74E, widths of 152–1219 mm, and lengths of 915–12190 mm.",
+          "source_url": "https://www.dornerconveyors.com/wp-content/uploads/2021/10/Dorner_AquPruf_Manual_0426e.pdf#page=8",
+          "source_title": "AquaPruf Engineering Manual — Flat Belt End Drive, page 8",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Final dimensions and ordering code require selection; no specific belt, motor, or controls are assumed."
+        },
+        {
+          "claim": "Food-handling and cleaning construction",
+          "value": "The Flat Belt End Drive specification lists a continuous TIG-welded 304 stainless-steel frame, FDA-approved belting and plastic components, and construction for caustic washdown.",
+          "source_url": "https://www.dornerconveyors.com/wp-content/uploads/2021/10/Dorner_AquPruf_Manual_0426e.pdf#page=8",
+          "source_title": "AquaPruf Engineering Manual — Flat Belt End Drive, page 8",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Obtain declarations for selected contact materials. These statements do not establish IP67, apple singulation, or refrigeration."
+        }
+      ],
+      "qualification_gaps": [
+        "Conveyor use is an optional implementation, not specified by the diagram.",
+        "Exact order code, belt surface, motor, controls, and support arrangement remain unresolved.",
+        "IP67 and applicable certifications are unverified for the selected configuration.",
+        "Apple slice release, overlap, bruising, portion size, robot accessibility, and allowable dwell time require trials.",
+        "Refrigeration and bulk-bag unloading are outside this proposed conveyor scope unless separately quoted."
+      ],
+      "next_action": "Confirm the station mechanism before procurement. If a conveyor is selected, trial refrigerated apple slices and obtain a complete configured quotation with contact-material declarations, cleaning limits, utilities, ingress ratings, price, and lead time."
+    },
+    {
+      "requirement_id": "E5",
+      "manufacturer": "Dorner",
+      "model": "AquaPruf Flat Belt Center Drive Conveyor",
+      "product_url": "https://www.dornerconveyors.com/wp-content/uploads/2025/03/Dorner_AquPruf_Manual_0325c.pdf",
+      "recommendation": "alternative",
+      "rationale": "Conditional presentation-only option for one dedicated grape station. Proposed integration requires operators to place separated, pre-portioned bunches on the belt; bulk-carton feeding and grape handling are not qualified. Commercial configuration is documented in the manufacturer manual, page 10: https://www.dornerconveyors.com/wp-content/uploads/2025/03/Dorner_AquPruf_Manual_0325c.pdf",
+      "price": {
+        "claim": "Exact configured equipment price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-05",
+        "status": "unknown",
+        "note": "Obtain a configuration-specific quotation including drive, controls, supports and integration."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-05",
+        "status": "unknown",
+        "note": "No model/configuration-specific delivery commitment established; family delivery advertising is not applied."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Food-contact suitability",
+          "value": "The model-specific specification lists FDA-approved belting and plastic components and suitability for raw-food applications.",
+          "source_url": "https://www.dornerconveyors.com/wp-content/uploads/2025/03/Dorner_AquPruf_Manual_0325c.pdf",
+          "source_title": "Dorner AquaPruf Engineering Manual, page 10 — Flat Belt Center Drive",
+          "retrieved_date": "2026-11-05",
+          "status": "supplier_claim",
+          "note": "Obtain declarations for the actual selected belt and every food-contact accessory; this is not evidence of IP67."
+        },
+        {
+          "claim": "Configurable presentation footprint",
+          "value": "Belt widths 152–1219 mm; conveyor lengths 915–12190 mm.",
+          "source_url": "https://www.dornerconveyors.com/wp-content/uploads/2025/03/Dorner_AquPruf_Manual_0325c.pdf",
+          "source_title": "Dorner AquaPruf Engineering Manual, page 10 — Flat Belt Center Drive",
+          "retrieved_date": "2026-11-05",
+          "status": "supplier_claim",
+          "note": "Select dimensions after confirming bunch envelope, robot reach and loading access. No grape-specific performance is established."
+        }
+      ],
+      "qualification_gaps": [
+        "IP67 compliance for applicable components is unverified.",
+        "Operation at 36–40 F, condensation tolerance and cleaning compatibility require written confirmation.",
+        "Bunch dimensions, stem entanglement, damage limits and robot pick presentation require sample trials.",
+        "Manual separation/loading, indexing and robot handshake are proposed scope, not confirmed requirements.",
+        "Required certifications and sustained support for 200 acceptable plates/hour remain unqualified.",
+        "Final belt, dimensions, drive and accessories—and therefore the orderable configuration—remain unresolved."
+      ],
+      "next_action": "Approve or reject manual bunch placement first. Send representative grape bunches to Dorner/integrator for trials and request an exact configured quotation with food-contact documentation, ingress ratings, cold-room suitability and delivery commitment."
+    },
+    {
+      "requirement_id": "E6",
+      "manufacturer": "Waldrop Company",
+      "model": "Model 125 Tray Denester — rotating-shaft version",
+      "product_url": "https://www.waldropco.com/tray-handling",
+      "recommendation": "recommended",
+      "rationale": "Recommended for supplier qualification, not purchase approval: its documented vertical-stack, single-tray-on-command operation matches the proposed single-magazine function. Select the rotating-shaft version explicitly, not the separately described screw version. Source: https://www.waldropco.com/tray-handling",
+      "price": {
+        "claim": "Exact configured equipment price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-05",
+        "status": "unknown",
+        "note": "Obtain a tray-specific quotation; no exact-model public price established."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-05",
+        "status": "unknown",
+        "note": "Obtain supplier engineering, fabrication and delivery dates."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Single-tray separation from a vertical stack",
+          "value": "Accepts consumer trays in a vertical stack and uses rotating shafts to dispense one tray upon command from integrated equipment.",
+          "source_url": "https://www.waldropco.com/tray-handling",
+          "source_title": "Waldrop Food Tray Handling — Model 125 Tray Denester",
+          "retrieved_date": "2026-11-05",
+          "status": "supplier_claim",
+          "note": "Actual tray separation reliability and stack capacity require trials."
+        },
+        {
+          "claim": "Standalone integration option",
+          "value": "Available standalone with provisions for mounting on an existing conveyor or with a stainless-steel movable stand.",
+          "source_url": "https://www.waldropco.com/tray-handling",
+          "source_title": "Waldrop Food Tray Handling — Model 125 Tray Denester",
+          "retrieved_date": "2026-11-05",
+          "status": "supplier_claim",
+          "note": "Retain quantity one; do not assume a second magazine or automatic distribution to both assembly rows."
+        }
+      ],
+      "qualification_gaps": [
+        "Confirm handwritten 'boxes' means the specified empty plastic trays.",
+        "Tray dimensions, material, flange/nesting geometry, separation force and stack capacity are unresolved.",
+        "No exact-model throughput guarantee, IP67 rating, cold-room operating range or certification established.",
+        "Food-contact boundaries, material declarations and cleaning compatibility require confirmation.",
+        "Transfer from the single dispenser to both assembly rows is undefined.",
+        "Utilities, controls interface and final tray-specific tooling remain unresolved."
+      ],
+      "next_action": "Provide production tray samples and drawings; request a single-magazine standalone Model 125 rotating-shaft proposal. Require denesting trials, double-feed/missed-feed detection, demonstrated required rate, two-row handoff design, applicable ingress/food-contact evidence, utilities, USD price and lead time."
+    },
+    {
+      "requirement_id": "E7",
+      "manufacturer": "Dorner",
+      "model": "AquaPruf Flat Belt End Drive — configuration/order code unresolved",
+      "product_url": "https://www.dornerconveyors.com/products/sanitary-stainless-steel-conveyors/aquapruf-conveyors/flat-end-drive",
+      "recommendation": "alternative",
+      "rationale": "Conditional conveyor alternative for engineering review, not authorization to reinterpret the diagram as conveyors. Preserve both depicted rows and station relationships; equipment quantity remains unresolved.",
+      "price": {
+        "claim": "Exact configured equipment price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain a configuration-specific quotation."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain supplier confirmation; stock availability is unverified."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Published dimensional configuration range",
+          "value": "Belt widths 152–1219 mm; conveyor lengths 915–12190 mm.",
+          "source_url": "https://www.dornerconveyors.com/products/sanitary-stainless-steel-conveyors/aquapruf-conveyors/flat-end-drive",
+          "source_title": "AquaPruf Flat Belt End Drive",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Does not establish tray fit, two-row layout, indexing accuracy, pitch or buffer capacity."
+        },
+        {
+          "claim": "Wet-application belt selection restriction",
+          "value": "Manufacturer limits wet applications to specialty belt types 54, 55, 69 and 70.",
+          "source_url": "https://www.dornerconveyors.com/products/sanitary-stainless-steel-conveyors/aquapruf-conveyors/flat-end-drive",
+          "source_title": "AquaPruf Flat Belt End Drive — Fabric Belting",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Select only after cleaning conditions are defined; no exact configured IP rating or food-contact declaration established."
+        }
+      ],
+      "qualification_gaps": [
+        "Catalog configuration identified, but no purchase-ready order code: dimensions, belt, drive, controls and fixtures remain unspecified.",
+        "Conveyor architecture requires human approval; retain both rows without assuming conveyor count or illustrated buffer capacity.",
+        "Confirm tray geometry, loaded mass, positioning tolerance, indexing, row allocation and inspection/closure interfaces.",
+        "Obtain configuration-specific food-contact documentation, applicable IP67 evidence, cleaning compatibility and 36–40 F operating approval."
+      ],
+      "next_action": "Request a two-row layout proposal and exact configured BOM, with positioning trials and a quotation; do not purchase before architecture approval."
+    },
+    {
+      "requirement_id": "E8",
+      "manufacturer": "FANUC",
+      "model": "DR-3iB/8L — request unpainted electroless-nickel-plated option; end effectors unresolved",
+      "product_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+      "recommendation": "recommended",
+      "rationale": "Recommended robot-platform shortlist for application trials only. This is not a complete qualified handling system: robot quantity, tooling and shared-zone coverage remain unresolved.",
+      "price": {
+        "claim": "Exact robot configuration and integrated tooling price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request an itemized robot, controller, tooling, safeguarding and integration quotation."
+      },
+      "lead_time": {
+        "claim": "Exact configured robot and tooling delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Supplier confirmation required."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Exact-model mechanical capacity",
+          "value": "Four axes, 8 kg maximum payload, 1600 mm published reach and ceiling mounting.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Technical Details",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Require work-envelope simulation across both rows, including tooling mass and ingredient presentation locations."
+        },
+        {
+          "claim": "Exact-model published ingress protection and surface option",
+          "value": "IP69K body and wrist/J3 arm protection; optional unpainted electroless-nickel-plated surface.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Protection and Primary Food Handling",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Do not extend robot ratings to tooling or controller, or treat IP69K alone as proof of the specified IP67 requirement."
+        }
+      ],
+      "qualification_gaps": [
+        "No exact end-effector model qualified; food-contact declarations, IP67 evidence and cleaning compatibility remain blocking.",
+        "Trials must establish damage-free handling of soft cheese, apple slices, stemmed grape bunches and wrapped crackers.",
+        "Robot count, reach coverage, payload with tooling, tool changes and ingredient presentation remain unresolved.",
+        "Obtain written 36–40 F operating approval, cleaning compatibility and safeguards for all four operator interfaces.",
+        "Require integrated acceptance testing demonstrating 200 acceptable plates/hour, including inspection, closure, rejects and downtime."
+      ],
+      "next_action": "Send actual ingredient and tray samples to FANUC/integrator; request exact tooling selections, two-row simulation, safeguarding design, performance guarantee and itemized quotation."
+    },
+    {
+      "requirement_id": "E9",
+      "manufacturer": "KEYENCE",
+      "model": "IV3-600CA",
+      "product_url": "https://www.keyence.com/products/vision/vision-sensor/iv3/models/iv3-600ca/",
+      "recommendation": "recommended",
+      "rationale": "Recommended for application testing, not purchase release. Keep camera quantity unresolved; validate coverage and independent plate decisions for both existing rows.",
+      "price": {
+        "claim": "Exact-model price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain an itemized quotation including lighting, cables, mounting, software and integration."
+      },
+      "lead_time": {
+        "claim": "Exact-model delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request written availability and delivery commitment."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Inspection tools and result interfaces",
+          "value": "1280 × 960 color imaging; learning, color-area and blob-count tools; external trigger; assignable total OK/NG and individual-tool results; EtherNet/IP, PROFINET and TCP/IP interfaces.",
+          "source_url": "https://www.keyence.com/products/vision/vision-sensor/iv3/models/iv3-600ca/",
+          "source_title": "IV3-600CA — Specifications",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "These features do not establish successful completeness inspection or correct plate/reject association; demonstrate both."
+        },
+        {
+          "claim": "Exact-model environmental limits",
+          "value": "IP67 except when specified polarizing filters are mounted; operating ambient 32–122°F, no freezing; 35–85% RH, no condensation.",
+          "source_url": "https://www.keyence.com/products/vision/vision-sensor/iv3/models/iv3-600ca/",
+          "source_title": "IV3-600CA — Environmental resistance and footnotes 16–17",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "The proposed 36–40°F is within the stated temperature range. Food-contact suitability and cleaning compatibility remain unqualified."
+        }
+      ],
+      "qualification_gaps": [
+        "Tray dimensions, row spacing, working distance, smallest detectable omission, lighting and acceptance tolerances remain undefined.",
+        "Camera count remains unknown; do not equate two inspection positions with two cameras.",
+        "Require plate-ID/row tracking, trigger/result handshake and fail-safe reject routing.",
+        "Required certifications, condensation control and cleaning compatibility are blocking questions."
+      ],
+      "next_action": "Arrange a sample-based trial across both rows, including missing/wrong ingredients and natural variation. Require demonstrated inspection and reject tracking at 200 acceptable plates/hour before human purchase approval."
+    },
+    {
+      "requirement_id": "E10",
+      "manufacturer": "Samey Robotics",
+      "model": "SR-LID MAGAZINE",
+      "product_url": "https://samey.is/samey-lausnir/sr-lid-magazine/",
+      "recommendation": "not_qualified",
+      "rationale": "Research lead only, not a compliant substitute for the single lid presentation position. Do not introduce automatic denesting, additional magazines or conveying without explicit architecture approval.",
+      "price": {
+        "claim": "Exact-configuration price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "A scoped supplier quotation is required."
+      },
+      "lead_time": {
+        "claim": "Exact-configuration delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request engineering, fabrication and delivery lead times."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Published lid-storage and presentation architecture",
+          "value": "Automatic system using multiple elevated magazines and conveyors to deliver individual lids to a lid-placement robot.",
+          "source_url": "https://samey.is/samey-lausnir/sr-lid-magazine/",
+          "source_title": "SR-LID MAGAZINE — Samey Robotics",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "The published architecture is not the required single presentation magazine."
+        },
+        {
+          "claim": "Configuration approach",
+          "value": "Manufacturer describes the named system as scalable and custom-designed for each customer's needs.",
+          "source_url": "https://samey.is/samey-lausnir/sr-lid-magazine/",
+          "source_title": "SR-LID MAGAZINE — Samey Robotics",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "This does not establish availability of a standalone single magazine or compatibility with the proposed clear nested lids."
+        }
+      ],
+      "qualification_gaps": [
+        "No qualified exact purchasable single-magazine configuration established.",
+        "Require matching tray/lid drawings and samples, nesting pitch, separation forces, stack capacity and pickup orientation.",
+        "Temperature limits, applicable ingress ratings, food-contact materials, cleaning compatibility, utilities and required certifications remain unknown.",
+        "Supplier must confirm whether magazine-only supply is possible without changing the cell architecture."
+      ],
+      "next_action": "Send actual tray/lid samples and request a quotation for exactly one presentation magazine, explicitly excluding unapproved denesting and conveying. If unavailable, commission a packaging-specific magazine; retain human approval before purchase."
+    },
+    {
+      "requirement_id": "E11",
+      "manufacturer": "Proseal",
+      "model": "GT1-Lid",
+      "product_url": "https://www.proseal.com/machines/lid-clipping/gtl1/",
+      "recommendation": "alternative",
+      "rationale": "Conditional alternative for supplier trials only, not purchase approval. Consider only if the human-selected tray/lid combination requires clipping; closure technology remains unconfirmed.",
+      "price": {
+        "claim": "Exact configured purchase price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain a quotation including tooling, integration, freight and commissioning."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request a dated supplier commitment."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Lid-placement and closure mechanism",
+          "value": "Automatic inline lid denesting, placing and tamping system; clips lids onto trays and can accept filled trays without an intermediate film lid.",
+          "source_url": "https://www.proseal.com/machines/lid-clipping/gtl1/",
+          "source_title": "Proseal GT1-Lid",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Evidence of a specific clipping solution, not evidence that the unspecified packaging is compatible."
+        },
+        {
+          "claim": "Published model throughput",
+          "value": "Up to 90 packs/minute.",
+          "source_url": "https://www.proseal.com/machines/",
+          "source_title": "Proseal Machine Range — GT1-Lid",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Maximum catalogue rate does not establish stable operation at the required average output or acceptable closure yield."
+        }
+      ],
+      "qualification_gaps": [
+        "Tray/lid drawings, materials, tolerances, nesting characteristics and closure mechanism remain blocking inputs.",
+        "Exact food-contact material declarations, applicable component IP67 ratings and operation at 36–40 F are unverified.",
+        "Required certifications and cleaning compatibility remain unqualified.",
+        "Closure acceptance criteria, detection of incomplete closure and reject/rework controls require definition.",
+        "Device quantity and connection to the existing two tray rows remain unresolved; do not redesign the cell around this candidate."
+      ],
+      "next_action": "Confirm packaging technology first. If clipping is selected, submit representative filled trays and lids for cold-condition trials; obtain a configuration-specific quotation and acceptance test guaranteeing the required net output. Otherwise exclude this candidate."
+    },
+    {
+      "requirement_id": "E12",
+      "manufacturer": "Proseal",
+      "model": "SC Conveyor",
+      "product_url": "https://www.proseal.com/machines/conveyor/sc-conveyor/",
+      "recommendation": "recommended",
+      "rationale": "Recommended for quotation as one conditional accepted-product handoff interface, not as a qualified purchase. Retain O3 and O4 and the single accepted-product exit; do not add automated staging or replace operator tasks.",
+      "price": {
+        "claim": "Exact configured purchase price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain a quotation for one configured conveyor, including controls and supports."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request supplier manufacturing and delivery dates."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Transport and cleaning features",
+          "value": "Modular flat-belt conveyor with speed control, stainless-steel construction, food-safe polyurethane belts, quick-release belt access and integrated belt lifters.",
+          "source_url": "https://www.proseal.com/machines/conveyor/sc-conveyor/",
+          "source_title": "Proseal SC Conveyor",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Food-safe belt and wash-down descriptions do not establish IP67 or a specific certification."
+        },
+        {
+          "claim": "Published installation envelope",
+          "value": "Belt height 995 mm; overall width 685 mm; customer-specified filling length from 2 m to 20 m.",
+          "source_url": "https://www.proseal.com/machines/conveyor/sc-conveyor/",
+          "source_title": "Proseal SC Conveyor — Specifications",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Confirm usable belt width, transfer geometry and ergonomic access for both end operators."
+        }
+      ],
+      "qualification_gaps": [
+        "Tray dimensions, weight, available footprint, discharge elevation and staging arrangement remain unspecified.",
+        "Minimum controllable speed, accumulation capacity and sustained handoff at 200 acceptable plates/hour require validation.",
+        "Operation at 36–40 F, applicable component IP67 ratings, cleaning compatibility and required certifications are unverified.",
+        "Accepted-only release, upstream stop interlocks and reject separation require integration design.",
+        "Exact belt, motor, controls, electrical supply and final order configuration remain unselected."
+      ],
+      "next_action": "Request one conveyor configured solely for accepted closed-plate presentation to O3/O4. Confirm footprint and operator reach, then trial actual plates at the required output with blocked-discharge and reject scenarios."
+    },
+    {
+      "requirement_id": "E13",
+      "manufacturer": "Fortress Technology",
+      "model": "Diverter Reject — supplier configuration/part number unresolved",
+      "product_url": "https://fortresstechnology.com/solutions/diverter-reject/",
+      "recommendation": "recommended",
+      "rationale": "Recommended for quotation and application testing only, not purchase approval. Evaluate routing both failure streams to the shared rework destination without assuming two devices. Manufacturer evidence is recorded below; suitability for uncovered or improperly closed plates remains unqualified.",
+      "price": {
+        "claim": "Exact configured equipment price in USD",
+        "value": null,
+        "source_url": "https://fortresstechnology.com/solutions/diverter-reject/",
+        "source_title": "Diverter Reject | Fortress Technology",
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Quotation offered; no public price stated."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment delivery lead time",
+        "value": null,
+        "source_url": "https://fortresstechnology.com/solutions/diverter-reject/",
+        "source_title": "Diverter Reject | Fortress Technology",
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "No public lead time stated; obtain a dated supplier commitment."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Reject routing mechanism",
+          "value": "Mechanical paddle redirects products diagonally into a reject bin and returns for the next pack.",
+          "source_url": "https://fortresstechnology.com/solutions/diverter-reject/",
+          "source_title": "Diverter Reject | Fortress Technology",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "External inspection/closure signals, tracking and reject confirmation require qualification."
+        },
+        {
+          "claim": "Published product-handling scope",
+          "value": "Designed for controlled, gentle rejection of medium-to-light packaged products; manufacturer identifies products under 15 lb.",
+          "source_url": "https://fortresstechnology.com/solutions/diverter-reject/",
+          "source_title": "Diverter Reject | Fortress Technology",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Not evidence of suitability for exposed ingredients, loose lids or the actual plate geometry."
+        }
+      ],
+      "qualification_gaps": [
+        "Exact orderable configuration, conveyor scope, receiving equipment and device quantity remain unresolved.",
+        "Food-contact declarations, IP67 compliance for food-touching components, cleaning compatibility and required certifications are unverified; these block purchase.",
+        "Operation at 36–40 F, condensation tolerance and actual tray dimensions, weights and lid-failure conditions require supplier confirmation.",
+        "Reject capacity, consecutive-failure handling, signal interfaces, safeguarding and acceptable-product throughput require testing.",
+        "Rework holding capacity, segregation, operator access and return point remain undefined."
+      ],
+      "next_action": "Request a configuration-specific quotation, drawings, USD price, lead time, utilities, certification evidence and trials using both uncovered inspection failures and closure failures. If manual handling is selected instead, specify that workflow separately before sourcing equipment."
+    }
+  ],
+  "overall_uncertainties": [
+    "Retrieval date is November 6, 2026, the applicable current date; the requested November 5, 2026 date would backdate this research.",
+    "Exactly one candidate per requirement is returned; additional alternatives are omitted to respect the batch limit.",
+    "Both recommendations are conditional shortlists, not purchasing releases. E2 remains incomplete at the orderable-SKU level.",
+    "No model-specific certification, IP67 rating, cold-room suitability or complete-cell throughput is inferred from material descriptions or other models.",
+    "Scope remains one shared loading interface and one cracker conveyor; no changes to the robot zone or parallel tray rows are proposed.",
+    "Actual retrieval date is November 6, 2026; the requested November 5, 2026 date is one day earlier and was not used to backdate evidence.",
+    "Exactly one candidate is returned per requirement; no additional equipment purchases or changes to the three-cheese-position/one-apple-station architecture are assumed.",
+    "Both entries identify configurable commercial products, not fully specified purchase-ready assemblies. Exact configurations, availability, price, and lead time remain unknown.",
+    "Neither candidate is qualified against all confirmed requirements. No model-specific certification or ingress rating has been inferred from another model or family.",
+    "Exactly one candidate per requirement is retained; neither is released for purchase.",
+    "Retrieval records use the requested date, 2026-11-05.",
+    "E5 is a conditional operator-loaded presentation concept, not a verified automatic feeder for bulk stemmed grape bunches.",
+    "Model-specific IP67 compliance is unverified for both candidates; washdown suitability must not be substituted for an ingress rating.",
+    "Net cell output of 200 acceptable plates/hour has not been demonstrated; station rates must account for rejects and downtime.",
+    "Ingredient supply formats remain assumptions, and packaging specifications remain unresolved.",
+    "Retrieval date is November 6, 2026; the requested November 5, 2026 date is yesterday and has not been used to backdate live research.",
+    "Exactly one candidate per requirement is returned; neither is purchase-qualified.",
+    "No exact-model/configuration price, stock or lead time was established.",
+    "Required jurisdiction and certifications, utilities, cleaning method, delivery deadline and detailed product/packaging specifications remain blocking.",
+    "Retrieval date is November 6, 2026, the applicable current date; the requested November 5, 2026 date was not used to backdate live research.",
+    "Exactly one candidate per requirement is returned; no additional alternatives are included.",
+    "E9 is a conditional trial recommendation. E10 remains unqualified; research found a named custom system but insufficient evidence for the required single-magazine configuration.",
+    "No exact-model price, stock or delivery commitment was established.",
+    "Ingredient supply formats remain assumptions, not confirmed supplier specifications.",
+    "These are named supplier products for quotation, not fully specified order configurations or purchase-qualified equipment.",
+    "Exactly one candidate per requirement is provided; no additional alternative candidates are included.",
+    "No exact-model USD price, stock commitment or delivery lead time was established.",
+    "The net 200 acceptable plates/hour requirement remains a cell-level acceptance target, not a validated result.",
+    "Exactly one candidate is returned as requested; no second equipment candidate is implied.",
+    "A named manufacturer offering was found, but an exact purchase-ready part number and full application qualification were not established.",
+    "Two failure routes remain two routes to a shared destination, not a confirmed quantity of reject devices."
+  ],
+  "human_decisions_required": [
+    "Approve required jurisdictional certifications before procurement; currently a blocking qualification question.",
+    "Provide product and packaging specifications, ingredient supply formats, station dimensions and manual-task boundaries.",
+    "Specify sanitation chemicals, pressure, temperature and direct-food-contact boundaries; resolve how IP67 applies to passive food-contact surfaces.",
+    "Provide utilities, site conditions, operating duty, delivery deadline and installation constraints.",
+    "Approve packet-rate and presentation acceptance criteria supporting approximately 200 acceptable plates/hour.",
+    "Final equipment selection, safety approval and purchasing remain human decisions.",
+    "Approve product geometry, wrapping, apple portions, replenishment tasks, operating duty, and acceptance criteria.",
+    "Establish required certifications and clarify how the IP67 requirement applies to food-contact surfaces versus electrical enclosures.",
+    "Approve cleaning methods, chemicals, utilities, cold-room conditions, footprint, and delivery deadline.",
+    "Choose the feeding/presentation mechanism independently for each position; require representative-product trials before acceptance.",
+    "Final equipment selection and purchasing approval remain human decisions.",
+    "Make final purchasing decisions only after qualification and written supplier commitments.",
+    "Approve E5 manual loading scope while preserving one grape station and the shared robotic zone.",
+    "Confirm tray identity and specify routing from one E6 dispenser to both existing assembly rows.",
+    "Supply grape and tray specifications, cleaning procedure, utilities, duty cycle, reject/rework logic and delivery deadline.",
+    "Resolve required jurisdictional certifications before purchase; clarify how the IP67 requirement applies to passive food-contact surfaces versus rated electrical/mechanical components.",
+    "Approve acceptance tests covering 36–40 F operation, grape damage, tray separation reliability, sanitation and sustained acceptable output.",
+    "Approve tray-transfer architecture while preserving both depicted rows, station relationships and the shared robotic zone.",
+    "Define tray/lid dimensions, ingredient portions and supply formats, damage limits, manual tasks, inspection/closure interfaces and reject/rework handoff.",
+    "Specify cleaning conditions, food-contact documentation, required certifications and component-specific ingress acceptance criteria.",
+    "Approve supplier trials, acceptance criteria, final configured BOM and final purchase; purchasing remains a human decision.",
+    "Approve packaging specifications, inspection recipes/tolerances, camera count and plate-to-reject tracking.",
+    "Define lid separation responsibility and manual versus automated tasks while retaining one lid presentation position.",
+    "Resolve required certifications, food-contact boundaries, cleaning method, operating conditions and site utilities before purchase.",
+    "Set throughput acceptance tests, replenishment requirements, delivery deadline and budget. Final purchasing remains a human decision.",
+    "Approve packaging specifications and closure technology before selecting E11 equipment.",
+    "Define closure acceptance, inspection, reject/rework handling and E11 quantity.",
+    "Confirm cleaning method, food-contact boundaries, component IP67 applicability and required jurisdictional certifications before purchase.",
+    "Provide utilities, operating conditions, duty cycle, delivery deadline and site layout.",
+    "Approve the single E12 interface while retaining both designated end operators and the existing two-row architecture.",
+    "Authorize final purchasing only after configuration-specific supplier evidence, trials and commercial review.",
+    "Choose manual versus automatic diversion and determine whether the failure streams can share a reject station without changing the input architecture.",
+    "Provide product/packaging specifications, reject frequency and burst rate, rework capacity, return point and operator responsibilities.",
+    "Confirm cleaning method, food-contact boundaries, utilities, jurisdiction, required certifications and delivery deadline before purchase.",
+    "Approve application testing and final equipment purchase; purchasing remains a human decision."
+  ]
+}

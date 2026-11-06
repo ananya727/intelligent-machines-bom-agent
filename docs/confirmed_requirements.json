@@ -1,0 +1,374 @@
+{
+  "analysis": {
+    "process_summary": "The diagram shows a fruit-and-cheese plate assembly cell with an upper ingredient/loading area, a shared robotic manipulation zone, and two parallel rows of trays in the lower assembly/inspection area. Operators O1 and O2 load the upper area; operators O3 and O4 are associated with the finished-product end. Inputs are three cheese varieties, grapes, apples, wrapped crackers, empty plastic trays, and separate clear lids. Trays are dispensed individually, filled, inspected by camera, closed with lids, and passed to finished-product staging. Inspection or closure failures go to reject/rework. Target output is 200 acceptable plates/hour. The ingredient supply formats are explicitly assumptions in the document, not confirmed supplier specifications.",
+    "process_steps": [
+      {
+        "id": "S1",
+        "name": "Operator loading and replenishment",
+        "description": "A common upper loading space labeled for O1 and O2 serves the cracker, three-cheese, apple, grape, and lid supply areas. Incoming bulk cases, cartons, and bags are described in the input table; unpacking methods are not shown.",
+        "upstream_ids": [],
+        "diagram_evidence": "Green upper band labeled 'operator loading space (O1; O2)' spanning the ingredient and lid stations."
+      },
+      {
+        "id": "S2",
+        "name": "Cracker presentation",
+        "description": "Individually wrapped cracker packets, supplied stacked in cases, are presented on a conveyor belt toward the robotic manipulation zone.",
+        "upstream_ids": [
+          "S1"
+        ],
+        "diagram_evidence": "Upper-left station labeled 'crackers' with packet-like rectangles, a downward arrow, and 'conveyor belt'; input table specifies individually wrapped packets."
+      },
+      {
+        "id": "S3",
+        "name": "Three-variety cheese presentation",
+        "description": "Three separate cheese supply positions are retained. The first illustrated cheese stream is associated with 'linear feed w/ vibration'; adjacent streams are labeled '2nd cheese' and '3rd cheese'. The written reference plate has five cheese pieces: two Tillamook Sharp Cheddar, two Beecher's Flagship, and one brie wedge. Inputs are assumed to be three separately packed varieties of consistently pre-cut wedges.",
+        "upstream_ids": [
+          "S1"
+        ],
+        "diagram_evidence": "Three adjacent cheese positions between crackers and apples; explanatory text specifies the five-piece, three-variety cheese composition."
+      },
+      {
+        "id": "S4",
+        "name": "Apple presentation",
+        "description": "A separate apple supply station presents pre-sliced apples from refrigerated bulk bags to the robotic zone. Its feeding mechanism is not identified.",
+        "upstream_ids": [
+          "S1"
+        ],
+        "diagram_evidence": "Dedicated pink column labeled 'apples'; input table specifies pre-sliced, refrigerated bulk bags."
+      },
+      {
+        "id": "S5",
+        "name": "Grape presentation",
+        "description": "A separate grape supply station presents pre-portioned stemmed bunches from bulk cartons to the robotic zone. Its feeding mechanism is not identified.",
+        "upstream_ids": [
+          "S1"
+        ],
+        "diagram_evidence": "Dedicated purple column labeled 'grapes'; input table specifies pre-portioned stemmed bunches in bulk cartons."
+      },
+      {
+        "id": "S6",
+        "name": "Empty tray dispensing and presentation",
+        "description": "Nested plastic trays arrive in bulk cases. A magazine beside the lower assembly area is labeled for dispensing boxes one at a time. The lower area depicts two parallel rows, each with three empty tray/box positions before inspection. A separate downward 'boxes' arrow appears at the far left; its precise connection to the magazine is not drawn.",
+        "upstream_ids": [],
+        "diagram_evidence": "Left-side box magazine and downward 'boxes' arrow; six brown empty rectangles in two rows of three; input table identifies empty trays as nested plastic trays."
+      },
+      {
+        "id": "S7",
+        "name": "Robotic plate assembly",
+        "description": "The shared robotic manipulation zone interfaces with the ingredient presentation stations and the two-row tray area. Plates receive cheese, grapes, apples, and wrapped crackers. Robot count, allocation of work between tray positions, and the transport mechanism are not shown.",
+        "upstream_ids": [
+          "S2",
+          "S3",
+          "S4",
+          "S5",
+          "S6"
+        ],
+        "diagram_evidence": "Blue horizontal band labeled 'Robotic manipulation zone' above the lower tray area; rightward arrows lead from the empty-tray rows to filled plates."
+      },
+      {
+        "id": "S8",
+        "name": "Camera inspection",
+        "description": "Filled plates are visually inspected for assembly completeness in both depicted rows. Passing plates move right toward closure; failing plates are routed to reject/rework.",
+        "upstream_ids": [
+          "S7"
+        ],
+        "diagram_evidence": "'INSPECT w/ CAMERA' above one filled-plate position in each row, green rightward 'PASS' flow, and a red 'FAIL' arrow toward reject/rework."
+      },
+      {
+        "id": "S9",
+        "name": "Lid supply and plate closure",
+        "description": "Separately supplied nested clear lids are presented at the upper-right lid station. Following inspection, plates are closed with lids. The rightmost plate in each row has an additional outline consistent with closure, but the closure actuator and verification method are not specified.",
+        "upstream_ids": [
+          "S1",
+          "S8"
+        ],
+        "diagram_evidence": "Upper-right stack labeled 'lids'; two double-outlined filled plates after the inspection pass arrows; output text explicitly states plates are closed with lids."
+      },
+      {
+        "id": "S10",
+        "name": "Accepted-product handoff",
+        "description": "Acceptable closed plates pass rightward to the operator end labeled O3 and O4 and are transferred to finished-product staging. Required output is 200 acceptable plates/hour across the cell, not per depicted row.",
+        "upstream_ids": [
+          "S9"
+        ],
+        "diagram_evidence": "Right-side 'operator end (O3; O4)' with green 'PASS' arrow; output paragraph identifies finished-product staging and target throughput."
+      },
+      {
+        "id": "S11",
+        "name": "Reject and rework routing",
+        "description": "Failures from inspection and the downstream closure/output area go to reject/rework. The drawing does not identify a re-entry point or a rework station.",
+        "upstream_ids": [
+          "S8",
+          "S9"
+        ],
+        "diagram_evidence": "Two red 'FAIL' arrows lead toward 'reject, goes back into rework'; written outputs include failures of inspection or closure."
+      }
+    ],
+    "equipment_requirements": [
+      {
+        "id": "E1",
+        "process_step_id": "S1",
+        "category": "Loading and replenishment interface",
+        "function": "Provide the shared operator loading space serving the drawn supply stations.",
+        "quantity": 1,
+        "diagram_evidence": "One continuous upper loading area labeled for O1 and O2.",
+        "constraints": [
+          "Retain access for the two designated loading operators.",
+          "Serve crackers, three cheese varieties, apples, grapes, and lids in the drawn arrangement.",
+          "Equipment dimensions, operator reach, and robot safety interfaces are unspecified."
+        ]
+      },
+      {
+        "id": "E2",
+        "process_step_id": "S2",
+        "category": "Cracker packet conveyor",
+        "function": "Present wrapped cracker packets to robotic handling.",
+        "quantity": 1,
+        "diagram_evidence": "One cracker station explicitly labeled 'conveyor belt'.",
+        "constraints": [
+          "Handle individually wrapped packets without damage.",
+          "Packet dimensions, packet count per plate, and required presentation orientation are unspecified."
+        ]
+      },
+      {
+        "id": "E3",
+        "process_step_id": "S3",
+        "category": "Cheese feeding and presentation positions",
+        "function": "Maintain separate presentation of the three cheese varieties for picking.",
+        "quantity": 3,
+        "diagram_evidence": "Three cheese supply positions; a vibratory linear-feed annotation beside the first and labels for the second and third cheeses.",
+        "constraints": [
+          "Quantity denotes three presentation positions, not three confirmed vibratory feeder purchases.",
+          "Vibratory linear feeding is explicitly indicated beside the first stream; its applicability to the other two is unclear.",
+          "Reference composition is two cheddar pieces, two Flagship pieces, and one brie wedge per plate.",
+          "Confirm piece geometry, temperature, adhesion, fragility, and whether any cheese is wrapped.",
+          "Direct food-contact and sanitation requirements must be established."
+        ]
+      },
+      {
+        "id": "E4",
+        "process_step_id": "S4",
+        "category": "Apple presentation station",
+        "function": "Present pre-sliced apples for robotic assembly.",
+        "quantity": 1,
+        "diagram_evidence": "One dedicated apple column.",
+        "constraints": [
+          "Input is assumed to be refrigerated bulk bags of pre-sliced apples.",
+          "No conveyor, singulator, refrigeration device, or dispensing mechanism is specified.",
+          "Portion size, allowable dwell time, and damage limits require confirmation."
+        ]
+      },
+      {
+        "id": "E5",
+        "process_step_id": "S5",
+        "category": "Grape presentation station",
+        "function": "Present pre-portioned stemmed grape bunches for robotic assembly.",
+        "quantity": 1,
+        "diagram_evidence": "One dedicated grape column.",
+        "constraints": [
+          "Input is assumed to be pre-portioned stemmed bunches in bulk cartons.",
+          "Bunch size and shape variation, stem handling, and damage limits require confirmation.",
+          "No specific feeding mechanism is drawn."
+        ]
+      },
+      {
+        "id": "E6",
+        "process_step_id": "S6",
+        "category": "Tray magazine and single-tray dispenser",
+        "function": "Store nested empty trays and dispense them individually into the assembly area.",
+        "quantity": 1,
+        "diagram_evidence": "One magazine drawn at lower left, annotated for boxes dispensed one at a time.",
+        "constraints": [
+          "Confirm that handwritten 'boxes' refers to the plastic trays in the input table.",
+          "Tray dimensions, material, nesting geometry, stack capacity, and separation force are unspecified.",
+          "The transfer from this magazine to both depicted rows is not detailed."
+        ]
+      },
+      {
+        "id": "E7",
+        "process_step_id": "S7",
+        "category": "Tray positioning and transfer equipment",
+        "function": "Support and move trays through the two depicted rows of assembly, inspection, and closure positions.",
+        "quantity": null,
+        "diagram_evidence": "Two rows, each showing three empty positions followed by an inspection plate and a downstream outlined plate.",
+        "constraints": [
+          "Preserve both depicted rows and their station relationships.",
+          "The lower area is not explicitly labeled as a conveyor.",
+          "Do not interpret illustrated tray positions as a confirmed conveyor count or buffer capacity.",
+          "Indexing, fixturing, pitch, and row allocation require confirmation."
+        ]
+      },
+      {
+        "id": "E8",
+        "process_step_id": "S7",
+        "category": "Robotic handling system and end effectors",
+        "function": "Transfer the presented ingredients into trays within the shared robotic manipulation zone.",
+        "quantity": null,
+        "diagram_evidence": "One shared zone labeled 'Robotic manipulation zone'; no individual robot symbols or counts.",
+        "constraints": [
+          "Robot quantity, type, reach, payload, and end-effector count are not specified.",
+          "Handle soft cheese, apple slices, stemmed grape bunches, and wrapped crackers without unacceptable damage.",
+          "Food-contact materials, cleaning compatibility, and operator safeguarding require specification.",
+          "Support 200 acceptable plates/hour in combination with all other stations."
+        ]
+      },
+      {
+        "id": "E9",
+        "process_step_id": "S8",
+        "category": "Machine vision inspection system",
+        "function": "Inspect assembly completeness and provide pass/fail decisions for both rows.",
+        "quantity": null,
+        "diagram_evidence": "'INSPECT w/ CAMERA' spans the two filled-plate inspection positions.",
+        "constraints": [
+          "Camera count is not specified; two inspection positions do not establish two cameras.",
+          "Lighting, field of view, recipe checks, and acceptance tolerances require definition.",
+          "Pass/fail results must correspond to the correct plate and reject route."
+        ]
+      },
+      {
+        "id": "E10",
+        "process_step_id": "S9",
+        "category": "Lid supply magazine",
+        "function": "Present separately supplied nested clear lids for closure.",
+        "quantity": 1,
+        "diagram_evidence": "One upper-right lid stack/presentation position.",
+        "constraints": [
+          "Confirm lid geometry, nesting behavior, stack capacity, and separation method.",
+          "Automated lid denesting is not explicitly drawn.",
+          "Lids must match the specified trays."
+        ]
+      },
+      {
+        "id": "E11",
+        "process_step_id": "S9",
+        "category": "Lid placement and closure equipment",
+        "function": "Place lids and close completed plates before accepted-product discharge.",
+        "quantity": null,
+        "diagram_evidence": "Written closure requirement and two downstream double-outlined plates.",
+        "constraints": [
+          "Closure mechanism and number of devices are unspecified.",
+          "Do not assume heat sealing, snap fitting, or another closure technology.",
+          "Closure acceptance criteria and failure detection require confirmation."
+        ]
+      },
+      {
+        "id": "E12",
+        "process_step_id": "S10",
+        "category": "Finished-product handoff interface",
+        "function": "Present accepted closed plates to O3 and O4 for transfer to staging.",
+        "quantity": 1,
+        "diagram_evidence": "One rightward accepted-product exit at the operator end.",
+        "constraints": [
+          "Retain the two designated end operators.",
+          "Discharge transport and staging equipment are not specified.",
+          "Required net cell output is 200 acceptable plates/hour, equivalent to one accepted plate every 18 seconds on average."
+        ]
+      },
+      {
+        "id": "E13",
+        "process_step_id": "S11",
+        "category": "Reject/rework handling",
+        "function": "Route failed plates from inspection and the closure/output area to rework.",
+        "quantity": null,
+        "diagram_evidence": "Two failure arrows converge on a reject/rework destination.",
+        "constraints": [
+          "Two failure routes are drawn, not two confirmed reject devices.",
+          "Manual versus automatic diversion is unspecified.",
+          "Rework equipment, capacity, and return point are not shown."
+        ]
+      }
+    ],
+    "clarification_questions": [
+      {
+        "key": "product_and_packaging_specifications",
+        "question": "Can you confirm the assumed input formats and provide ingredient, tray, lid, and cracker-packet specifications or samples, including dimensions, weights, variability, cheese wrapping status, and portions per plate? Is the stated 2+2+1 cheese recipe the required production recipe?",
+        "why_critical": "These determine feeder feasibility, gripping, tray denesting, closure compatibility, vision checks, and cycle time.",
+        "blocking": true
+      },
+      {
+        "key": "operating_conditions",
+        "question": "What are the ambient temperature and humidity, incoming ingredient temperatures, allowable out-of-refrigeration times, and any required temperature control at the presentation and assembly stations?",
+        "why_critical": "Cold-chain limits, condensation, and ingredient adhesion affect food safety, materials, sensors, and handling performance.",
+        "blocking": true
+      },
+      {
+        "key": "food_contact_and_cleaning",
+        "question": "Which equipment surfaces will directly contact exposed food, and what cleaning regime is required: dry cleaning, wipe-down, or washdown? Specify cleaning chemicals, concentrations, temperatures, spray pressure, and allergen-changeover requirements.",
+        "why_critical": "These establish food-contact material requirements, hygienic design, corrosion resistance, ingress protection, and cleanability.",
+        "blocking": true
+      },
+      {
+        "key": "throughput_and_duty",
+        "question": "Is 200 acceptable plates/hour a sustained net rate including replenishment, rejects, cleaning, and downtime? What shifts, availability target, expected reject rate, peak rate, and product changeovers must the cell support?",
+        "why_critical": "Net output alone does not establish the gross equipment rate, robot count, feeder capacity, or duty rating.",
+        "blocking": true
+      },
+      {
+        "key": "station_scope_and_manual_tasks",
+        "question": "Are the two lower rows independently operated lanes or another arrangement of tray positions? Does vibratory feeding apply to all three cheese varieties? Which loading, lid placement, closure, rejection, and rework tasks belong to O1–O4 versus purchased automation?",
+        "why_critical": "The drawn stations can be preserved, but equipment quantities and integration scope cannot be finalized without their operating relationships and task allocation.",
+        "blocking": true
+      },
+      {
+        "key": "inspection_and_closure",
+        "question": "What must inspection accept or reject, with what tolerances and false-accept/false-reject limits? What is the lid closure type, required closure force or process, and method for verifying closure?",
+        "why_critical": "These determine vision capability, closure tooling, detection hardware, and reject controls.",
+        "blocking": true
+      },
+      {
+        "key": "utilities_and_site",
+        "question": "What electrical supply, compressed-air pressure/flow/quality, vacuum, water, drainage, and control-network connections are available? What footprint, access, and installation constraints apply to the drawn arrangement?",
+        "why_critical": "Utilities and site limits determine compatible drives, pneumatics, cleaning provisions, and physical equipment sizing.",
+        "blocking": true
+      },
+      {
+        "key": "jurisdiction_and_certifications",
+        "question": "Where will the cell be installed, and which food-contact, machinery safety, electrical, sanitation, and customer or airline certifications are mandatory? Will operators access the robotic zone during operation or replenishment?",
+        "why_critical": "Jurisdiction and access requirements determine applicable conformity obligations, component approvals, and safeguarding.",
+        "blocking": true
+      },
+      {
+        "key": "reject_rework_and_handoff",
+        "question": "How are failed plates removed, held, reworked, and returned, and what purchased equipment is required at the O3/O4 finished-product handoff?",
+        "why_critical": "The diagram defines these routes but not their devices, capacity, return interface, or supply boundaries.",
+        "blocking": true
+      }
+    ],
+    "extraction_uncertainties": [
+      "The input table explicitly describes assumed supply formats; these should not be treated as verified supplier capabilities.",
+      "The cheese recipe is derived by the document author from a reference plate that 'appears to match' an airline platter; production confirmation is needed.",
+      "The handwritten magazine annotation appears to mean 'Magazine for boxes dispensed 1 at a time'; the drawing uses 'boxes' while the input table uses 'trays'. Their equivalence is not explicit.",
+      "The first cheese stream lacks a clear variety label. '2nd cheese' and '3rd cheese' identify adjacent streams, but no stream is mapped to a named variety.",
+      "The 'linear feed w/ vibration' annotation points toward the first cheese presentation area; it does not clearly specify identical feeder mechanisms for all three varieties.",
+      "The lower diagram clearly depicts two parallel rows, but does not establish independent conveyor lanes, indexing logic, or equipment count.",
+      "Six empty tray symbols, two inspection-stage filled plates, and two downstream outlined plates are drawn; these are depicted positions or states, not confirmed machine quantities or capacities.",
+      "The robotic zone does not specify robot count, end effectors, or whether lid handling is performed by the same robotic system.",
+      "Camera inspection is explicit, but camera count, lighting, inspection criteria, and closure-verification hardware are not shown.",
+      "The downstream double outlines are consistent with lidded plates, supported by the written output description; the actual closing mechanism is absent.",
+      "O1 and O2 are assigned to the loading space and O3 and O4 to the operator end. Detailed individual duties are not stated.",
+      "The reject/rework destination is explicit, but no return connection, re-entry station, or rework equipment is drawn.",
+      "No cutting, slicing, grape portioning, or cracker unwrapping station is shown; none has been added to the equipment extraction."
+    ]
+  },
+  "human_assumptions": {
+    "operating_temperature": "36-40 F",
+    "food_contact_rule": "Any component touching food must be food safe",
+    "minimum_ingress_rating": "IP67 for components touching food",
+    "target_throughput": "Approximately 200 acceptable plates per hour",
+    "input_formats": "Prepared ingredients as shown in the diagram",
+    "required_certifications": "Unknown; identify as a blocking qualification question",
+    "site_utilities": "Unknown; request before purchase",
+    "cleaning_method": "Unknown; request before purchase",
+    "delivery_deadline": "Unknown; obtain supplier lead times",
+    "currency": "USD",
+    "product_and_packaging_specifications": "Unknown - unresolved; human input required",
+    "operating_conditions": "Unknown - unresolved; human input required",
+    "food_contact_and_cleaning": "Unknown - unresolved; human input required",
+    "throughput_and_duty": "Unknown - unresolved; human input required",
+    "station_scope_and_manual_tasks": "Unknown - unresolved; human input required",
+    "inspection_and_closure": "Unknown - unresolved; human input required",
+    "utilities_and_site": "Unknown - unresolved; human input required",
+    "jurisdiction_and_certifications": "Unknown - unresolved; human input required",
+    "reject_rework_and_handoff": "Unknown - unresolved; human input required"
+  }
+}
