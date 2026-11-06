@@ -35,14 +35,14 @@ def run(args):
     confirmed=ConfirmedRequirements(analysis=analysis, human_assumptions=collect_answers(analysis, supplied))
     _write(out.parent/"confirmed_requirements.json", confirmed)
     bom=research_candidates(confirmed, client, model, out.parent / "research_batches")
-    _write(out.parent/"bom.json", bom); write_page(out, confirmed, bom)
+    _write(out.parent/"bom.json", bom); write_page(out, confirmed, bom, Path(args.image))
     print(f"Generated {out}")
 
 
 def render_only(args):
     bom=_read(args.bom, BomResearch)
     confirmed_path=Path(args.confirmed) if args.confirmed else Path(args.bom).with_name("example_confirmed_requirements.json")
-    write_page(Path(args.output), _read(confirmed_path, ConfirmedRequirements), bom)
+    write_page(Path(args.output), _read(confirmed_path, ConfirmedRequirements), bom, Path(args.diagram))
     print(f"Generated {args.output}")
 
 
@@ -51,7 +51,7 @@ def main(argv=None):
     argv = list(sys.argv[1:] if argv is None else argv)
     if argv and argv[0] == "render":
         p=argparse.ArgumentParser(description="Render saved BOM JSON")
-        p.add_argument("command"); p.add_argument("bom"); p.add_argument("--confirmed"); p.add_argument("--output", required=True)
+        p.add_argument("command"); p.add_argument("bom"); p.add_argument("--confirmed"); p.add_argument("--diagram", default="examples/process_diagram.png"); p.add_argument("--output", required=True)
         render_only(p.parse_args(argv)); return
     p=argparse.ArgumentParser(description="Diagram-to-interactive-BOM agent")
     p.add_argument("image"); p.add_argument("--assumptions"); p.add_argument("--output", default="generated/purchasing_page.html")

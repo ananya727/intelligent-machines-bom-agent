@@ -2,11 +2,11 @@
 
 This lightweight Python demonstration turns a manufacturing-process diagram into an evidence-backed, interactive purchasing BOM.
 
-## [Review the generated purchasing webpage](docs/index.html)
+## [Open the live purchasing webpage](https://ananya727.github.io/intelligent-machines-bom-agent/)
 
-The self-contained page is checked into `docs/index.html` and is ready to use as the GitHub Pages entry point. This repository is private, so Pages has intentionally not been published publicly; reviewers with repository access can download and open the HTML without an API key or build step.
+The self-contained example is published from `docs/index.html`. Reviewers can inspect the original diagram, recommendations, evidence, qualification gaps, RFQ actions, and human decision controls without an API key or build step.
 
-The checked-in example is a real run against my Part 1 process diagram. It detected 11 process steps and 13 equipment requirements, researched one candidate for every requirement, preserved unsupported values as unknown, and generated the HTML deterministically.
+The checked-in example is a real run against my Part 1 process diagram. It detected 11 process steps and 13 equipment requirements, researched one candidate for every requirement, preserved unsupported values as unknown, and generated the HTML deterministically. The webpage distinguishes 10 core process purchases from 3 supporting items without changing the input architecture.
 
 ## Workflow
 
@@ -70,7 +70,8 @@ bom-agent render generated/bom.json \
 
 ## Output artifacts
 
-- [`docs/index.html`](docs/index.html) - GitHub Pages-ready purchasing page
+- [Live purchasing page](https://ananya727.github.io/intelligent-machines-bom-agent/) - published reviewer experience
+- [`docs/index.html`](docs/index.html) - checked-in self-contained page
 - [`docs/requirements.json`](docs/requirements.json) - real diagram interpretation
 - [`docs/confirmed_requirements.json`](docs/confirmed_requirements.json) - requirements plus human assumptions
 - [`docs/bom.json`](docs/bom.json) - live-researched candidates and claim-level evidence
@@ -109,7 +110,7 @@ python -m py_compile src/bom_agent/*.py
 ```text
 src/bom_agent/       vision, research, models, workflow, and renderer
 examples/            input diagram and confirmed assumptions
-generated/           real run artifacts and resumable research batches
+generated/           real run artifacts; local runs also cache ignored research batches
 docs/                GitHub Pages-ready copy of the reviewed output
 tests/               focused renderer/evidence safety test
 ```
