@@ -2,11 +2,9 @@
 
 This lightweight Python demonstration turns a manufacturing-process diagram into an evidence-backed, interactive purchasing BOM.
 
-## [Open the generated purchasing webpage](docs/index.html)
+## [Review the generated purchasing webpage](docs/index.html)
 
-When GitHub Pages is enabled for `docs/`, the same self-contained page opens as a normal website without a download, API key, or build step. Intended Pages URL:
-
-`https://ananya-tacta.github.io/intelligent-machines-bom-agent/`
+The self-contained page is checked into `docs/index.html` and is ready to use as the GitHub Pages entry point. This repository is private, so Pages has intentionally not been published publicly; reviewers with repository access can download and open the HTML without an API key or build step.
 
 The checked-in example is a real run against my Part 1 process diagram. It detected 11 process steps and 13 equipment requirements, researched one candidate for every requirement, preserved unsupported values as unknown, and generated the HTML deterministically.
 
