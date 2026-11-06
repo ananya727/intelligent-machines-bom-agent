@@ -1,0 +1,19 @@
+{
+  "analysis": {
+    "process_summary": "Two-tray indexed cheese-plate assembly line with ingredient presentation, robotic placement, inspection, closure, and reject/rework handling.",
+    "process_steps": [],
+    "equipment_requirements": [
+      {"id":"robot","process_step_id":"placement","category":"robot arm","function":"Place prepared ingredients","quantity":7,"diagram_evidence":"Robotic manipulation zone with parallel stations","constraints":["Food environment","36-40 F","IP67 where food-contact rule applies"]},
+      {"id":"conveyor","process_step_id":"transport","category":"indexed conveyor","function":"Move two trays between stations","quantity":1,"diagram_evidence":"Two-lane conveyor through manipulation zone","constraints":["Two-tray index"]}
+    ],
+    "clarification_questions": [],
+    "extraction_uncertainties": ["Exact tray and lid geometry is not shown"]
+  },
+  "human_assumptions": {
+    "operating_temperature": "36-40 F",
+    "food_contact_rule": "Food-contact components must be food safe and IP67",
+    "target_throughput": "Approximately 200 acceptable plates/hour",
+    "required_certifications": "Unresolved - purchasing blocker"
+  }
+}
+

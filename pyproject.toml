@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelligent-machines-bom-agent"
+version = "0.1.0"
+description = "Diagram-to-evidence-backed interactive BOM demonstration"
+requires-python = ">=3.10"
+dependencies = ["openai>=2.0", "pydantic>=2.0", "python-dotenv>=1.0"]
+
+[project.scripts]
+bom-agent = "bom_agent.workflow:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+

@@ -1,0 +1,13 @@
+{
+  "operating_temperature": "36-40 F",
+  "food_contact_rule": "Any component touching food must be food safe",
+  "minimum_ingress_rating": "IP67 for components touching food",
+  "target_throughput": "Approximately 200 acceptable plates per hour",
+  "input_formats": "Prepared ingredients as shown in the diagram",
+  "required_certifications": "Unknown; identify as a blocking qualification question",
+  "site_utilities": "Unknown; request before purchase",
+  "cleaning_method": "Unknown; request before purchase",
+  "delivery_deadline": "Unknown; obtain supplier lead times",
+  "currency": "USD"
+}
+

@@ -1,0 +1,2 @@
+[console_scripts]
+bom-agent = bom_agent.workflow:main
