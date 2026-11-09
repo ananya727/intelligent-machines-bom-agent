@@ -1,0 +1,307 @@
+{
+  "process_summary": "Single-tray-indexing food assembly line with three robot arms: Arm 1 places three varieties of cheese, Arm 2 places crackers, and Arm 3 places apple slices. An operator replenishes ingredient presentation trays and grapes are placed manually. Trays are denested onto a conveyor; assembled product undergoes vision inspection, followed by manual lid closure and sealing, and exits as a sealed tray. The diagram explicitly excludes a grape picker and lid applicator. Estimated throughput is approximately 135 acceptable plates/hour, compared with 240/hour in the original design; customer approval is required for the lower throughput and extended production window. A replenishment operator and a closure/sealing operator are illustrated, but total staffing and assignment of manual grape placement are not specified.",
+  "process_steps": [
+    {
+      "id": "PS1",
+      "name": "Load ingredient presentation trays",
+      "description": "Operator loads and replenishes cheese in three varieties, crackers, apple slices, and grapes for manual placement. Four ingredient presentation trays are illustrated.",
+      "upstream_ids": [],
+      "diagram_evidence": "Process Steps item 1; four ingredient supply illustrations; operator labeled 'Replenishes ingredient trays as needed.'"
+    },
+    {
+      "id": "PS2",
+      "name": "Denest trays and place on conveyor",
+      "description": "Stacked empty trays feed a tray denester and are placed onto the single-tray-indexing conveyor. The physical transfer from denester to conveyor is not drawn.",
+      "upstream_ids": [],
+      "diagram_evidence": "Process Steps item 2; 'Trays' input points to 'Tray denester'; Key Changes specifies single-tray indexing instead of dual-tray."
+    },
+    {
+      "id": "PS3",
+      "name": "Robot Arm 1 places cheese",
+      "description": "Robot Arm 1 places the three cheese varieties into the product carrier. This is numbered station 1 on the conveyor.",
+      "upstream_ids": [
+        "PS1",
+        "PS2"
+      ],
+      "diagram_evidence": "Process Steps item 3 and station label 'Robot Arm 1 (cheese)'; input labeled 'Cheese (3 varieties).'"
+    },
+    {
+      "id": "PS4",
+      "name": "Robot Arm 2 places crackers",
+      "description": "Robot Arm 2 places crackers into the product carrier after cheese placement. This is numbered station 2.",
+      "upstream_ids": [
+        "PS1",
+        "PS3"
+      ],
+      "diagram_evidence": "Process Steps item 4 and station label 'Robot Arm 2 (crackers).'"
+    },
+    {
+      "id": "PS5",
+      "name": "Robot Arm 3 places apple slices",
+      "description": "Robot Arm 3 places apple slices into the product carrier after cracker placement. This is numbered station 3.",
+      "upstream_ids": [
+        "PS1",
+        "PS4"
+      ],
+      "diagram_evidence": "Process Steps item 5 and station label 'Robot Arm 3 (apple).'"
+    },
+    {
+      "id": "PS6",
+      "name": "Operator places grapes",
+      "description": "An operator manually places grapes after apple placement and before vision inspection. No separate numbered grape-placement station or dedicated operator is illustrated.",
+      "upstream_ids": [
+        "PS1",
+        "PS5"
+      ],
+      "diagram_evidence": "Process Steps item 6; input labeled 'Grapes (manual placement)'; Key Changes states 'No grape picker (manual grape placement).'"
+    },
+    {
+      "id": "PS7",
+      "name": "Vision inspection",
+      "description": "Inspect assembly quality after all ingredient placement. This is numbered station 4. No reject route or reject-handling mechanism is shown.",
+      "upstream_ids": [
+        "PS6"
+      ],
+      "diagram_evidence": "Process Steps item 7 and conveyor station labeled 'Vision Inspection.'"
+    },
+    {
+      "id": "PS8",
+      "name": "Manual lid closure and sealing",
+      "description": "An operator closes and seals the lid after vision inspection. This is numbered station 5. The lid supply and sealing method are not depicted; there is no automatic lid applicator.",
+      "upstream_ids": [
+        "PS7"
+      ],
+      "diagram_evidence": "Process Steps item 8; station labeled 'Manual Lid Closure & Sealing'; title and Key Changes exclude a lid applicator."
+    },
+    {
+      "id": "PS9",
+      "name": "Finished product exits cell",
+      "description": "The finished sealed tray exits to the right of the conveyor. No downstream packing or handling equipment is shown.",
+      "upstream_ids": [
+        "PS8"
+      ],
+      "diagram_evidence": "Process Steps item 9 and rightward output arrow to 'Finished Product (Sealed Tray).'"
+    }
+  ],
+  "equipment_requirements": [
+    {
+      "id": "ER1",
+      "process_step_id": "PS1",
+      "category": "Cheese presentation tray",
+      "function": "Present three cheese varieties for Robot Arm 1 and permit manual replenishment.",
+      "quantity": 1,
+      "diagram_evidence": "One labeled 'Cheese presentation tray' beneath the three-variety cheese input.",
+      "constraints": [
+        "Accommodate three cheese varieties as drawn.",
+        "Quantity represents the illustrated tray, not spare or changeover inventory.",
+        "Food-contact materials, dimensions, sanitation method, and presentation geometry require confirmation."
+      ]
+    },
+    {
+      "id": "ER2",
+      "process_step_id": "PS1",
+      "category": "Cracker presentation tray",
+      "function": "Present crackers for Robot Arm 2 and permit manual replenishment.",
+      "quantity": 1,
+      "diagram_evidence": "One labeled 'Cracker presentation tray.'",
+      "constraints": [
+        "Quantity represents the illustrated tray, not spare inventory.",
+        "Cracker dimensions, fragility, orientation, and food-contact requirements are unspecified."
+      ]
+    },
+    {
+      "id": "ER3",
+      "process_step_id": "PS1",
+      "category": "Apple presentation tray",
+      "function": "Present apple slices for Robot Arm 3 and permit manual replenishment.",
+      "quantity": 1,
+      "diagram_evidence": "One labeled 'Apple presentation tray.'",
+      "constraints": [
+        "Quantity represents the illustrated tray, not spare inventory.",
+        "Slice dimensions, surface moisture, orientation, and sanitation requirements are unspecified."
+      ]
+    },
+    {
+      "id": "ER4",
+      "process_step_id": "PS1",
+      "category": "Grape presentation tray",
+      "function": "Hold grapes for manual placement.",
+      "quantity": 1,
+      "diagram_evidence": "One tray illustrated beneath 'Grapes (manual placement).'",
+      "constraints": [
+        "Manual grape placement must be retained; no grape picker.",
+        "Tray is illustrated but not separately captioned.",
+        "Quantity represents the illustrated tray, not spare inventory."
+      ]
+    },
+    {
+      "id": "ER5",
+      "process_step_id": "PS2",
+      "category": "Tray denester",
+      "function": "Separate stacked trays for placement onto the conveyor.",
+      "quantity": 1,
+      "diagram_evidence": "One machine labeled 'Tray denester' below the stacked-tray input; Process Steps item 2.",
+      "constraints": [
+        "Support the depicted single-tray flow.",
+        "Tray specification, stack capacity, and conveyor transfer interface are not supplied.",
+        "The diagram references unchanged plate and tray specifications from an unavailable original design."
+      ]
+    },
+    {
+      "id": "ER6",
+      "process_step_id": "PS2",
+      "category": "Single-tray-indexing conveyor",
+      "function": "Transport product through robot placement, manual grape placement, vision inspection, manual closure/sealing, and cell exit.",
+      "quantity": 1,
+      "diagram_evidence": "One continuous left-to-right conveyor; Key Changes states 'Single-tray indexing instead of dual-tray.'",
+      "constraints": [
+        "Preserve the depicted process order and manual operations.",
+        "Estimated line output is approximately 135 acceptable plates/hour, not a confirmed conveyor specification.",
+        "Carrier geometry, index pitch, dwell times, dimensions, and controls interfaces are unspecified.",
+        "No separate reject conveyor or downstream packing conveyor is shown."
+      ]
+    },
+    {
+      "id": "ER7",
+      "process_step_id": "PS3",
+      "category": "Robot arm with cheese-handling end effector",
+      "function": "Pick and place the three cheese varieties.",
+      "quantity": 1,
+      "diagram_evidence": "Blue robot labeled 'Robot Arm 1 (cheese)' with an illustrated gripper.",
+      "constraints": [
+        "One of exactly three robot arms.",
+        "Must handle all three cheese varieties.",
+        "End-effector illustration does not establish a purchasing-ready gripping technology.",
+        "Payload, reach, portions per tray, cycle time, food-contact construction, and safety provisions require definition."
+      ]
+    },
+    {
+      "id": "ER8",
+      "process_step_id": "PS4",
+      "category": "Robot arm with cracker-handling end effector",
+      "function": "Pick and place crackers.",
+      "quantity": 1,
+      "diagram_evidence": "Green robot labeled 'Robot Arm 2 (crackers)' with an illustrated gripper.",
+      "constraints": [
+        "One of exactly three robot arms.",
+        "Gripping must be specified against actual cracker geometry and acceptable breakage.",
+        "Payload, reach, portions per tray, cycle time, food-contact construction, and safety provisions require definition."
+      ]
+    },
+    {
+      "id": "ER9",
+      "process_step_id": "PS5",
+      "category": "Robot arm with apple-slice-handling end effector",
+      "function": "Pick and place apple slices.",
+      "quantity": 1,
+      "diagram_evidence": "Purple robot labeled 'Robot Arm 3 (apple)' with an illustrated gripper.",
+      "constraints": [
+        "One of exactly three robot arms.",
+        "Gripping must be specified against actual slice geometry, moisture, and acceptable damage.",
+        "Payload, reach, portions per tray, cycle time, food-contact construction, and safety provisions require definition."
+      ]
+    },
+    {
+      "id": "ER10",
+      "process_step_id": "PS7",
+      "category": "Vision inspection station",
+      "function": "Check food assembly quality before lid closure and sealing.",
+      "quantity": 1,
+      "diagram_evidence": "One inspection unit at numbered station 4.",
+      "constraints": [
+        "Inspection occurs after manual grape placement and before closure/sealing.",
+        "Camera count, lighting, acceptance criteria, and inspection performance are unspecified.",
+        "No reject mechanism is shown; disposition of failed inspections requires confirmation."
+      ]
+    },
+    {
+      "id": "ER11",
+      "process_step_id": "PS8",
+      "category": "Manual lid closure and sealing workstation",
+      "function": "Support operator-performed lid closure and sealing.",
+      "quantity": 1,
+      "diagram_evidence": "One operator and work surface at numbered station 5, labeled 'Manual Lid Closure & Sealing.'",
+      "constraints": [
+        "Retain manual closure and sealing; no automatic lid applicator.",
+        "A separate powered sealing machine is not identifiable in the drawing.",
+        "Lid type, seal method, tooling, utilities, and seal acceptance criteria must be confirmed before selecting any sealing equipment."
+      ]
+    }
+  ],
+  "clarification_questions": [
+    {
+      "key": "packaging_specifications",
+      "question": "Please provide the referenced plate, tray, and lid specifications, including dimensions, materials, tolerances, stack/nesting details, and whether a separate plate sits inside the finished tray.",
+      "why_critical": "Determines denester compatibility, conveyor carriers, robot placement coordinates, and closure/sealing tooling; the diagram mixes round plates with rectangular trays.",
+      "blocking": true
+    },
+    {
+      "key": "product_and_portion_specifications",
+      "question": "What are the dimensions, weights, temperatures, surface conditions, and required portions per finished unit for each cheese variety, crackers, apple slices, and grapes, and what product damage is acceptable?",
+      "why_critical": "Required to select presentation geometry, robot capacity, food-handling end effectors, and achievable cycle times.",
+      "blocking": true
+    },
+    {
+      "key": "throughput_and_staffing",
+      "question": "Is approximately 135 acceptable units/hour the approved purchasing target? What are the required peak rate, yield, operating hours, uptime, and available staffing for replenishment, grape placement, and lid closure/sealing?",
+      "why_critical": "The stated rate is a modeling estimate requiring customer approval, and the original operating assumptions and manual-task staffing are not supplied.",
+      "blocking": true
+    },
+    {
+      "key": "food_contact_and_sanitation",
+      "question": "Which surfaces require direct-food-contact compliance, what material and lubricant restrictions apply, and what cleaning or washdown regime is required, including chemicals, temperature, pressure, and allergen-changeover procedures?",
+      "why_critical": "Determines hygienic construction, end-effector materials, conveyor design, ingress protection, and equipment suitability.",
+      "blocking": true
+    },
+    {
+      "key": "operating_environment",
+      "question": "What are the ambient and product temperature ranges, humidity and condensation conditions, and any chilled-room or exposed-food hold-time requirements?",
+      "why_critical": "Affects robot, vision, conveyor, and electrical component ratings and suitability for handling the food products.",
+      "blocking": true
+    },
+    {
+      "key": "utilities",
+      "question": "What electrical supply, compressed-air pressure/flow/quality, vacuum, network connections, and any sealing-related utilities are available at the cell?",
+      "why_critical": "Required to specify drives, controls, grippers, denester actuation, and any manual sealing equipment.",
+      "blocking": true
+    },
+    {
+      "key": "closure_and_sealing",
+      "question": "Does manual closure and sealing mean snapping a lid closed, applying a seal, or using an operator-actuated sealing device? What lid supply arrangement and seal-integrity criteria are required?",
+      "why_critical": "The drawing does not identify the sealing technology or lid input, so sealing hardware and tooling cannot yet be selected.",
+      "blocking": true
+    },
+    {
+      "key": "vision_acceptance",
+      "question": "Which assembly defects must vision detect, with what accuracy and false-accept/false-reject limits, and what should happen when inspection fails?",
+      "why_critical": "Determines vision hardware, software, lighting, and control interfaces; the diagram provides no reject-handling arrangement.",
+      "blocking": true
+    },
+    {
+      "key": "layout_and_safety",
+      "question": "What are the available footprint, conveyor working height, ingredient-tray positions, denester transfer interface, and operator access locations, and what machinery risk assessment or safeguarding requirements govern human access near the robots?",
+      "why_critical": "Needed to size robot reach, conveyor and transfer interfaces, and safeguarding without changing the drawn manual operations.",
+      "blocking": true
+    },
+    {
+      "key": "jurisdiction_and_certifications",
+      "question": "Where will the cell be installed, and which machinery, electrical, food-contact, hygienic-design, and customer-specific certifications or documented compliance requirements apply?",
+      "why_critical": "Determines acceptable equipment construction, approvals, safety documentation, and supplier qualification.",
+      "blocking": true
+    }
+  ],
+  "extraction_uncertainties": [
+    "The drawing uses round plate-like carriers on the conveyor but shows rectangular trays at the denester and finished-product output. A plate-to-tray relationship or transfer is not shown.",
+    "The denester is drawn above the downstream portion of the conveyor without a connecting transfer arrow. The written process list places denesting before robot loading.",
+    "Ingredient illustrations on successive conveyor carriers do not consistently depict cumulative assembly or align with the robot labels. The written process list and explicit station labels establish the stated sequence; the discrepancy remains unresolved.",
+    "Manual grape placement is explicitly required between apple placement and inspection, but no dedicated numbered station or operator at that location is drawn.",
+    "Two human figures are illustrated, but the drawing does not establish whether replenishment, grape placement, and closure/sealing use two people, shared duties, or other staffing.",
+    "The title and notes exclude an automatic lid applicator and grape picker; neither should be added to the purchasing scope.",
+    "Lid input, sealing technology, and a distinct sealing machine are not depicted.",
+    "The approximately 135 acceptable plates/hour figure is an estimate from referenced Part 2 modeling, not a demonstrated or guaranteed rate. Its assumptions are not provided.",
+    "Plate/tray specifications and operating-hours/uptime assumptions are described as unchanged from an original design that is not included.",
+    "Presentation-tray quantities reflect one of each type illustrated; spare trays, replenishment inventory, and exact compartment specifications are not established.",
+    "No dimensions, utility ratings, environmental ratings, food-contact certifications, or jurisdiction-specific requirements are provided.",
+    "No inspection-failure branch, rework route, or reject equipment is shown."
+  ]
+}

@@ -4,9 +4,15 @@ This lightweight Python demonstration turns a manufacturing-process diagram into
 
 ## [Open the live purchasing webpage](https://ananya727.github.io/intelligent-machines-bom-agent/)
 
+## [Open the simplified three-arm example](https://ananya727.github.io/intelligent-machines-bom-agent/simplified/)
+
 The self-contained example is published from `docs/index.html`. Reviewers can inspect the original diagram, recommendations, evidence, qualification gaps, RFQ actions, and human decision controls without an API key or build step.
 
 The checked-in example is a real run against my Part 1 process diagram. It detected 11 process steps and 13 equipment requirements, researched one candidate for every requirement, preserved unsupported values as unknown, and generated the HTML deterministically. The webpage distinguishes 10 core process purchases from 3 supporting items without changing the input architecture.
+
+### Architecture comparison
+
+The second run uses the simpler Part 2 planning case: three robot arms instead of seven, one tray per index instead of two, manual grape placement, and manual lid closure rather than an automatic lid applicator. The agent preserved that input and extracted 9 process steps and 11 equipment requirements, compared with 11 steps and 13 requirements for the original diagram. The Part 2 model estimates approximately 135 acceptable trays/hour using a 22-second bottleneck, 2-second index, and 90% effectiveness. That lower rate reduces mechanisms and robot count, but the longer production window and staffing plan require customer approval before this architecture can replace the original higher-throughput case.
 
 ## Workflow
 
@@ -76,6 +82,8 @@ bom-agent render generated/bom.json \
 - [`docs/confirmed_requirements.json`](docs/confirmed_requirements.json) - requirements plus human assumptions
 - [`docs/bom.json`](docs/bom.json) - live-researched candidates and claim-level evidence
 - [`examples/process_diagram.png`](examples/process_diagram.png) - example input
+- [`docs/simplified/index.html`](docs/simplified/index.html) - second purchasing page for the simplified architecture
+- [`examples/simplified_process_diagram.png`](examples/simplified_process_diagram.png) - simplified three-arm input
 
 ## Test result
 

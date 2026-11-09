@@ -1,0 +1,12 @@
+{
+  "packaging_specifications": "Use the same tray and lid format assumed in Part 2; exact dimensions, materials, tolerances, nesting details, and plate-to-tray relationship remain unresolved and require samples before purchase.",
+  "product_and_portion_specifications": "Use the same ingredient list and portions modeled in Part 2: three cheese varieties, crackers, apple slices, and manually placed grapes. Exact dimensions, weights, temperatures, surface conditions, and acceptable damage limits require product samples and trials.",
+  "throughput_and_staffing": "Planning case is approximately 135 acceptable trays per hour using a 22-second modeled bottleneck, 2-second index time, and 90% effectiveness. The longer production window and operator staffing for replenishment, grapes, and closure are not customer-approved.",
+  "food_contact_and_sanitation": "Any direct-food-contact component must be food safe. Cleaning method, chemicals, allergen-changeover procedure, and documentation requirements remain unresolved.",
+  "operating_environment": "Use the Part 2 refrigerated planning range of 36-40 F. Humidity, condensation, exposed-food hold-time, and exact ambient conditions require confirmation.",
+  "utilities": "Unknown; obtain site electrical, compressed-air, vacuum, network, and any sealing-utility requirements before purchase.",
+  "closure_and_sealing": "The diagram specifies manual lid closure and sealing with no automatic lid applicator. Exact lid geometry, snap-fit or seal mechanism, seal-integrity criteria, and need for an operator-actuated device remain unresolved.",
+  "vision_acceptance": "Inspection should check assembly completeness before closure. Defect classes, accuracy, false-accept and false-reject limits, and failed-product handling remain unresolved.",
+  "layout_and_safety": "Single-tray indexed flow with three robot arms and human access for replenishment, grape placement, and closure. Footprint, working height, guarding, safety zoning, and detailed operator access require an integrator risk assessment.",
+  "jurisdiction_and_certifications": "Unknown; installation jurisdiction, machinery and electrical requirements, food-contact documentation, hygienic-design expectations, and customer-specific certifications are blocking qualification questions."
+}

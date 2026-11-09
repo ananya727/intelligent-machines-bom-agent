@@ -1,0 +1,625 @@
+{
+  "candidates": [
+    {
+      "requirement_id": "ER1",
+      "manufacturer": "Cambro",
+      "model": "9113CP414",
+      "product_url": "https://www.cambro.com/Products/trays/meal-delivery-trays/",
+      "recommendation": "recommended",
+      "rationale": "Recommended for sample evaluation only. Proposed use: one compartment per cheese variety in one manually replenished presentation tray; robot accessibility and replenishment capacity remain unqualified.",
+      "price": {
+        "claim": "Exact-model advertised purchase price",
+        "value": "USD 106.99 per case of 24",
+        "source_url": "https://www.webstaurantstore.com/cambro-9113cp414-9-x-11-teal-3-compartment-meal-delivery-tray-case/2149113CPTE.html",
+        "source_title": "Cambro 9113CP414 — WebstaurantStore",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Case purchase exceeds the required one operating tray; request a single sample. Tax and freight require confirmation. ([webstaurantstore.com](https://www.webstaurantstore.com/cambro-9113cp414-9-x-11-teal-3-compartment-meal-delivery-tray-case/2149113CPTE.html))"
+      },
+      "lead_time": {
+        "claim": "Exact-model advertised dispatch estimate",
+        "value": "Usually ships in 4–5 business days from manufacturer",
+        "source_url": "https://www.webstaurantstore.com/cambro-9113cp414-9-x-11-teal-3-compartment-meal-delivery-tray-case/2149113CPTE.html",
+        "source_title": "Cambro 9113CP414 — WebstaurantStore",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Dependent on manufacturer stock; not a guaranteed delivery date. ([webstaurantstore.com](https://www.webstaurantstore.com/cambro-9113cp414-9-x-11-teal-3-compartment-meal-delivery-tray-case/2149113CPTE.html?utm_source=openai))"
+      },
+      "technical_evidence": [
+        {
+          "claim": "Compartment count",
+          "value": "Three compartments",
+          "source_url": "https://www.cambro.com/Products/trays/meal-delivery-trays/",
+          "source_title": "Cambro Meal Delivery Trays",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Manufacturer explicitly identifies the selected 9113CP414 as the three-compartment version. ([cambro.com](https://www.cambro.com/Products/trays/meal-delivery-trays/))"
+        },
+        {
+          "claim": "External dimensions",
+          "value": "11 × 9 × 2 9/16 inches (L × W × D)",
+          "source_url": "https://www.cambro.com/Products/trays/meal-delivery-trays/",
+          "source_title": "Cambro Meal Delivery Trays — 9113CP specification row",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Internal compartment dimensions and gripper clearance require drawings or measurement. ([cambro.com](https://www.cambro.com/Products/trays/meal-delivery-trays/))"
+        }
+      ],
+      "qualification_gaps": [
+        "Confirm usable compartment capacity for each cheese variety and required replenishment interval.",
+        "Trial cheese adhesion, separation, pick repeatability and gripper clearance around compartment walls.",
+        "Obtain exact-SKU food-contact documentation and approval for cleaning chemicals, allergen changeover and 36–40°F operation.",
+        "Resolve single-unit procurement versus the advertised case quantity."
+      ],
+      "next_action": "Request one sample and internal dimensions; test all three cheeses with Arm 1 before human purchase approval."
+    },
+    {
+      "requirement_id": "ER2",
+      "manufacturer": "Cambro",
+      "model": "918MT148",
+      "product_url": "https://www.cambro.com/Products/trays/market-trays-and-pans/",
+      "recommendation": "recommended",
+      "rationale": "Recommended for sample evaluation only as one manually replenished cracker presentation tray. Do not assume it provides cracker orientation or robotic singulation.",
+      "price": {
+        "claim": "Exact-model advertised single-unit price",
+        "value": "USD 12.99 each",
+        "source_url": "https://www.webstaurantstore.com/cambro-918mt148-9-x-18-white-fiberglass-market-tray/214918MTWH.html",
+        "source_title": "Cambro 918MT148 — WebstaurantStore",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "One unit matches the operating quantity; tax and freight require confirmation. ([webstaurantstore.com](https://www.webstaurantstore.com/cambro-918mt148-9-x-18-white-fiberglass-market-tray/214918MTWH.html))"
+      },
+      "lead_time": {
+        "claim": "Exact-model advertised dispatch estimate",
+        "value": "Usually ships in 1 business day",
+        "source_url": "https://www.webstaurantstore.com/cambro-918mt148-9-x-18-white-fiberglass-market-tray/214918MTWH.html",
+        "source_title": "Cambro 918MT148 — WebstaurantStore",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Dispatch estimate, not guaranteed stock or arrival date. ([webstaurantstore.com](https://www.webstaurantstore.com/cambro-918mt148-9-x-18-white-fiberglass-market-tray/214918MTWH.html))"
+      },
+      "technical_evidence": [
+        {
+          "claim": "External dimensions",
+          "value": "8 11/16 × 18 × 13/16 inches (W × L × D)",
+          "source_url": "https://www.cambro.com/Products/trays/market-trays-and-pans/",
+          "source_title": "Cambro Market Trays and Pans — 918MT specification row",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Use actual dimensions rather than the nominal 9 × 18-inch size; usable flat area remains unconfirmed. ([cambro.com](https://www.cambro.com/Products/trays/market-trays-and-pans/?utm_source=openai))"
+        },
+        {
+          "claim": "Application-specific food-contact and sanitation qualification",
+          "value": null,
+          "source_url": null,
+          "source_title": null,
+          "retrieved_date": "2026-11-06",
+          "status": "unknown",
+          "note": "Exact-SKU compliance documentation and compatibility with the proposed cleaning procedure have not been established; no family certification or temperature rating is transferred."
+        }
+      ],
+      "qualification_gaps": [
+        "Confirm cracker dimensions, orientation, spacing, capacity and acceptable breakage.",
+        "Trial Arm 2 picking under refrigerated humidity and condensation conditions.",
+        "Confirm mounting repeatability, usable flat area and whether a separately qualified locating fixture is necessary.",
+        "Obtain exact-SKU food-contact and cleaning documentation before production use."
+      ],
+      "next_action": "Obtain one sample; trial representative crackers with Arm 2 and approve sanitation and fixture details before human purchase approval."
+    },
+    {
+      "requirement_id": "ER3",
+      "manufacturer": "Vollrath",
+      "model": "90102 Super Pan 3 two-thirds-size tray",
+      "product_url": "https://www.vollrathfoodservice.com/products/smallwares/steam-table-pans-accessories/stainless-steel-steam-table-pans/super-pan-3-stainless-steel-steam-table-pans/90102",
+      "recommendation": "recommended",
+      "rationale": "Recommended for sample trials, not purchase release. Proposed use: one manually replenished apple presentation tray serving Arm 3. Robot-picking suitability remains unqualified.",
+      "price": {
+        "claim": "Distributor displayed unit price",
+        "value": "USD 35.86 each",
+        "source_url": "https://www.webstaurantstore.com/vollrath-90102-super-pan-3-2-3-size-anti-jam-stainless-steel-steam-table-tray-3-4-deep/92290102.html",
+        "source_title": "WebstaurantStore — Vollrath 90102",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Page also requests login/email for pricing; confirm checkout price, freight and tax."
+      },
+      "lead_time": {
+        "claim": "Distributor dispatch estimate",
+        "value": "Usually ships in 1 business day",
+        "source_url": "https://www.webstaurantstore.com/vollrath-90102-super-pan-3-2-3-size-anti-jam-stainless-steel-steam-table-tray-3-4-deep/92290102.html",
+        "source_title": "WebstaurantStore — Vollrath 90102",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Not a guaranteed delivery date or confirmed inventory allocation."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Exact-model presentation geometry",
+          "value": "Overall 12.812 × 13.907 × 0.75 inches; usable width × depth 11.688 × 12.777 inches.",
+          "source_url": "https://www.vollrathfoodservice.com/products/smallwares/steam-table-pans-accessories/stainless-steel-steam-table-pans/super-pan-3-stainless-steel-steam-table-pans/90102",
+          "source_title": "Vollrath — 90102 specifications",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Assess slice spacing, gripper clearance and fixture location against a physical sample."
+        },
+        {
+          "claim": "Exact-model material and sanitation certification claim",
+          "value": "22-gauge 300-series stainless steel; manufacturer states NSF-certified.",
+          "source_url": "https://www.vollrathfoodservice.com/products/smallwares/steam-table-pans-accessories/stainless-steel-steam-table-pans/super-pan-3-stainless-steel-steam-table-pans/90102",
+          "source_title": "Vollrath — 90102 construction and certification",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Certification scope and application-specific food-contact documentation require confirmation."
+        }
+      ],
+      "qualification_gaps": [
+        "Wet-slice adhesion, orientation, overlap, damage and reliable robot pickup remain untested.",
+        "Required holding capacity, replenishment interval, mounting and safe operator access are unresolved.",
+        "Cleaning-chemical compatibility and performance under 36–40°F condensation conditions require confirmation."
+      ],
+      "next_action": "Obtain one sample; trial actual apple slices and Arm 3 tooling at the intended temperature, then approve fixture, cleaning procedure and replenishment method."
+    },
+    {
+      "requirement_id": "ER4",
+      "manufacturer": "Vollrath",
+      "model": "90122 Super Pan 3 two-thirds-size, 2.5-inch-deep pan",
+      "product_url": "https://www.vollrathfoodservice.com/products/smallwares/steam-table-pans-accessories/stainless-steel-steam-table-pans/super-pan-3-stainless-steel-steam-table-pans/90122",
+      "recommendation": "recommended",
+      "rationale": "Recommended for manual grape-holding trials, not purchase release. Proposed use: one presentation pan with manual replenishment and manual grape placement; no grape picker.",
+      "price": {
+        "claim": "Distributor displayed unit price",
+        "value": "USD 37.18 each",
+        "source_url": "https://www.webstaurantstore.com/vollrath-90122-super-pan-3-2-3-size-anti-jam-stainless-steel-steam-table-pan-2-1-2-deep/92290122.html",
+        "source_title": "WebstaurantStore — Vollrath 90122",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Page also requests login/email for pricing; confirm checkout price, freight and tax."
+      },
+      "lead_time": {
+        "claim": "Distributor dispatch estimate",
+        "value": "Usually ships in 1 business day",
+        "source_url": "https://www.webstaurantstore.com/vollrath-90122-super-pan-3-2-3-size-anti-jam-stainless-steel-steam-table-pan-2-1-2-deep/92290122.html",
+        "source_title": "WebstaurantStore — Vollrath 90122",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Not a guaranteed delivery date or confirmed inventory allocation."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Exact-model holding geometry and capacity",
+          "value": "Overall 12.812 × 13.907 × 2.5 inches; brimful capacity 5.7 US quarts.",
+          "source_url": "https://www.vollrathfoodservice.com/products/smallwares/steam-table-pans-accessories/stainless-steel-steam-table-pans/super-pan-3-stainless-steel-steam-table-pans/90122",
+          "source_title": "Vollrath — 90122 specifications",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Brimful volume does not establish usable grape portions or replenishment frequency."
+        },
+        {
+          "claim": "Exact-model material and sanitation certification claim",
+          "value": "22-gauge 300-series stainless steel; manufacturer states NSF-certified.",
+          "source_url": "https://www.vollrathfoodservice.com/products/smallwares/steam-table-pans-accessories/stainless-steel-steam-table-pans/super-pan-3-stainless-steel-steam-table-pans/90122",
+          "source_title": "Vollrath — 90122 construction and certification",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Certification scope and application-specific food-contact documentation require confirmation."
+        }
+      ],
+      "qualification_gaps": [
+        "Grape portion, bunch versus loose presentation, acceptable fill depth and drainage needs are unresolved.",
+        "Operator reach, working height, placement method and replenishment interval require trials.",
+        "Cleaning-chemical compatibility and refrigerated exposed-food holding procedure require approval."
+      ],
+      "next_action": "Obtain one sample and validate manual portioning, reach, product condition and replenishment with the assigned operator before purchasing."
+    },
+    {
+      "requirement_id": "ER5",
+      "manufacturer": "Waldrop Company",
+      "model": "Model 125 Tray Denester — rotating-shaft version",
+      "product_url": "https://www.waldropco.com/tray-handling",
+      "recommendation": "recommended",
+      "rationale": "Conditional recommendation for the single-tray denesting function shown. Tray samples, discharge geometry, and the conveyor interface must be approved before purchase.",
+      "price": {
+        "claim": "Exact configured equipment price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-05",
+        "status": "unknown",
+        "note": "Obtain a tray-specific quotation; no exact-model public price established."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-05",
+        "status": "unknown",
+        "note": "Obtain supplier engineering, fabrication and delivery dates."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Single-tray separation from a vertical stack",
+          "value": "Accepts consumer trays in a vertical stack and uses rotating shafts to dispense one tray upon command from integrated equipment.",
+          "source_url": "https://www.waldropco.com/tray-handling",
+          "source_title": "Waldrop Food Tray Handling — Model 125 Tray Denester",
+          "retrieved_date": "2026-11-05",
+          "status": "supplier_claim",
+          "note": "Actual tray separation reliability and stack capacity require trials."
+        },
+        {
+          "claim": "Standalone integration option",
+          "value": "Available standalone with provisions for mounting on an existing conveyor or with a stainless-steel movable stand.",
+          "source_url": "https://www.waldropco.com/tray-handling",
+          "source_title": "Waldrop Food Tray Handling — Model 125 Tray Denester",
+          "retrieved_date": "2026-11-05",
+          "status": "supplier_claim",
+          "note": "Retain quantity one; do not assume a second magazine or automatic distribution to both assembly rows."
+        }
+      ],
+      "qualification_gaps": [
+        "Confirm handwritten 'boxes' means the specified empty plastic trays.",
+        "Tray dimensions, material, flange/nesting geometry, separation force and stack capacity are unresolved.",
+        "No exact-model throughput guarantee, IP67 rating, cold-room operating range or certification established.",
+        "Food-contact boundaries, material declarations and cleaning compatibility require confirmation.",
+        "Transfer from the single dispenser to both assembly rows is undefined.",
+        "Utilities, controls interface and final tray-specific tooling remain unresolved."
+      ],
+      "next_action": "Provide production tray samples and drawings; request a single-magazine standalone Model 125 rotating-shaft proposal. Require denesting trials, double-feed/missed-feed detection, demonstrated required rate, two-row handoff design, applicable ingress/food-contact evidence, utilities, USD price and lead time."
+    },
+    {
+      "requirement_id": "ER6",
+      "manufacturer": "Dorner",
+      "model": "AquaPruf Flat Belt End Drive — configuration/order code unresolved",
+      "product_url": "https://www.dornerconveyors.com/products/sanitary-stainless-steel-conveyors/aquapruf-conveyors/flat-end-drive",
+      "recommendation": "alternative",
+      "rationale": "Conditional recommendation for the drawn single-tray indexed conveyor. Final width, pitch, station spacing, human-access zones, controls, and sanitation configuration require integrator design and supplier quotation.",
+      "price": {
+        "claim": "Exact configured equipment price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain a configuration-specific quotation."
+      },
+      "lead_time": {
+        "claim": "Exact configured equipment delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain supplier confirmation; stock availability is unverified."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Published dimensional configuration range",
+          "value": "Belt widths 152–1219 mm; conveyor lengths 915–12190 mm.",
+          "source_url": "https://www.dornerconveyors.com/products/sanitary-stainless-steel-conveyors/aquapruf-conveyors/flat-end-drive",
+          "source_title": "AquaPruf Flat Belt End Drive",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Does not establish tray fit, two-row layout, indexing accuracy, pitch or buffer capacity."
+        },
+        {
+          "claim": "Wet-application belt selection restriction",
+          "value": "Manufacturer limits wet applications to specialty belt types 54, 55, 69 and 70.",
+          "source_url": "https://www.dornerconveyors.com/products/sanitary-stainless-steel-conveyors/aquapruf-conveyors/flat-end-drive",
+          "source_title": "AquaPruf Flat Belt End Drive — Fabric Belting",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Select only after cleaning conditions are defined; no exact configured IP rating or food-contact declaration established."
+        }
+      ],
+      "qualification_gaps": [
+        "Catalog configuration identified, but no purchase-ready order code: dimensions, belt, drive, controls and fixtures remain unspecified.",
+        "Conveyor architecture requires human approval; retain the single-tray line without assuming conveyor count or illustrated buffer capacity.",
+        "Confirm tray geometry, loaded mass, positioning tolerance, indexing, row allocation and inspection/closure interfaces.",
+        "Obtain configuration-specific food-contact documentation, applicable IP67 evidence, cleaning compatibility and 36–40 F operating approval."
+      ],
+      "next_action": "Request a two-row layout proposal and exact configured BOM, with positioning trials and a quotation; do not purchase before architecture approval."
+    },
+    {
+      "requirement_id": "ER7",
+      "manufacturer": "FANUC",
+      "model": "DR-3iB/8L — request unpainted electroless-nickel-plated option; end effectors unresolved",
+      "product_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+      "recommendation": "recommended",
+      "rationale": "Conditional robot-platform recommendation for the cheese station only. Quantity is one arm for this requirement; cheese-specific tooling, reach, cycle time, food contact, and cleaning suitability remain unqualified.",
+      "price": {
+        "claim": "Exact robot configuration and integrated tooling price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request an itemized robot, controller, tooling, safeguarding and integration quotation."
+      },
+      "lead_time": {
+        "claim": "Exact configured robot and tooling delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Supplier confirmation required."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Exact-model mechanical capacity",
+          "value": "Four axes, 8 kg maximum payload, 1600 mm published reach and ceiling mounting.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Technical Details",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Require work-envelope simulation across the single-tray line, including tooling mass and ingredient presentation locations."
+        },
+        {
+          "claim": "Exact-model published ingress protection and surface option",
+          "value": "IP69K body and wrist/J3 arm protection; optional unpainted electroless-nickel-plated surface.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Protection and Primary Food Handling",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Do not extend robot ratings to tooling or controller, or treat IP69K alone as proof of the specified IP67 requirement."
+        }
+      ],
+      "qualification_gaps": [
+        "No exact end-effector model qualified; food-contact declarations, IP67 evidence and cleaning compatibility remain blocking.",
+        "Trials must establish damage-free handling of soft cheese, apple slices, stemmed grape bunches and wrapped crackers.",
+        "Robot count, reach coverage, payload with tooling, tool changes and ingredient presentation remain unresolved.",
+        "Obtain written 36–40 F operating approval, cleaning compatibility and safeguards for all four operator interfaces.",
+        "Require integrated acceptance testing demonstrating approximately 135 acceptable trays/hour, including inspection, closure, rejects and downtime."
+      ],
+      "next_action": "Send actual ingredient and tray samples to FANUC/integrator; request exact tooling selections, two-row simulation, safeguarding design, performance guarantee and itemized quotation."
+    },
+    {
+      "requirement_id": "ER8",
+      "manufacturer": "FANUC",
+      "model": "DR-3iB/8L — request unpainted electroless-nickel-plated option; end effectors unresolved",
+      "product_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+      "recommendation": "recommended",
+      "rationale": "Conditional robot-platform recommendation for the cracker station only. Quantity is one arm for this requirement; packet-specific tooling, reach, cycle time, and cleaning suitability remain unqualified.",
+      "price": {
+        "claim": "Exact robot configuration and integrated tooling price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request an itemized robot, controller, tooling, safeguarding and integration quotation."
+      },
+      "lead_time": {
+        "claim": "Exact configured robot and tooling delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Supplier confirmation required."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Exact-model mechanical capacity",
+          "value": "Four axes, 8 kg maximum payload, 1600 mm published reach and ceiling mounting.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Technical Details",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Require work-envelope simulation across the single-tray line, including tooling mass and ingredient presentation locations."
+        },
+        {
+          "claim": "Exact-model published ingress protection and surface option",
+          "value": "IP69K body and wrist/J3 arm protection; optional unpainted electroless-nickel-plated surface.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Protection and Primary Food Handling",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Do not extend robot ratings to tooling or controller, or treat IP69K alone as proof of the specified IP67 requirement."
+        }
+      ],
+      "qualification_gaps": [
+        "No exact end-effector model qualified; food-contact declarations, IP67 evidence and cleaning compatibility remain blocking.",
+        "Trials must establish damage-free handling of soft cheese, apple slices, stemmed grape bunches and wrapped crackers.",
+        "Robot count, reach coverage, payload with tooling, tool changes and ingredient presentation remain unresolved.",
+        "Obtain written 36–40 F operating approval, cleaning compatibility and safeguards for all four operator interfaces.",
+        "Require integrated acceptance testing demonstrating approximately 135 acceptable trays/hour, including inspection, closure, rejects and downtime."
+      ],
+      "next_action": "Send actual ingredient and tray samples to FANUC/integrator; request exact tooling selections, two-row simulation, safeguarding design, performance guarantee and itemized quotation."
+    },
+    {
+      "requirement_id": "ER9",
+      "manufacturer": "FANUC",
+      "model": "DR-3iB/8L — request unpainted electroless-nickel-plated option; end effectors unresolved",
+      "product_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+      "recommendation": "recommended",
+      "rationale": "Conditional robot-platform recommendation for the apple station only. Quantity is one arm for this requirement; delicate-slice tooling, reach, cycle time, food contact, and cleaning suitability remain unqualified.",
+      "price": {
+        "claim": "Exact robot configuration and integrated tooling price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request an itemized robot, controller, tooling, safeguarding and integration quotation."
+      },
+      "lead_time": {
+        "claim": "Exact configured robot and tooling delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Supplier confirmation required."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Exact-model mechanical capacity",
+          "value": "Four axes, 8 kg maximum payload, 1600 mm published reach and ceiling mounting.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Technical Details",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Require work-envelope simulation across the single-tray line, including tooling mass and ingredient presentation locations."
+        },
+        {
+          "claim": "Exact-model published ingress protection and surface option",
+          "value": "IP69K body and wrist/J3 arm protection; optional unpainted electroless-nickel-plated surface.",
+          "source_url": "https://www.fanucamerica.com/products/robot/dr-3ib-8l",
+          "source_title": "DR-3iB/8L — Protection and Primary Food Handling",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Do not extend robot ratings to tooling or controller, or treat IP69K alone as proof of the specified IP67 requirement."
+        }
+      ],
+      "qualification_gaps": [
+        "No exact end-effector model qualified; food-contact declarations, IP67 evidence and cleaning compatibility remain blocking.",
+        "Trials must establish damage-free handling of soft cheese, apple slices, stemmed grape bunches and wrapped crackers.",
+        "Robot count, reach coverage, payload with tooling, tool changes and ingredient presentation remain unresolved.",
+        "Obtain written 36–40 F operating approval, cleaning compatibility and safeguards for all four operator interfaces.",
+        "Require integrated acceptance testing demonstrating approximately 135 acceptable trays/hour, including inspection, closure, rejects and downtime."
+      ],
+      "next_action": "Send actual ingredient and tray samples to FANUC/integrator; request exact tooling selections, two-row simulation, safeguarding design, performance guarantee and itemized quotation."
+    },
+    {
+      "requirement_id": "ER10",
+      "manufacturer": "KEYENCE",
+      "model": "IV3-600CA",
+      "product_url": "https://www.keyence.com/products/vision/vision-sensor/iv3/models/iv3-600ca/",
+      "recommendation": "recommended",
+      "rationale": "Conditional recommendation for the inspection function shown. Defect classes, optics, lighting, mounting, accuracy targets, rejection workflow, and line integration require trials and human approval.",
+      "price": {
+        "claim": "Exact-model price in USD",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Obtain an itemized quotation including lighting, cables, mounting, software and integration."
+      },
+      "lead_time": {
+        "claim": "Exact-model delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "Request written availability and delivery commitment."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Inspection tools and result interfaces",
+          "value": "1280 × 960 color imaging; learning, color-area and blob-count tools; external trigger; assignable total OK/NG and individual-tool results; EtherNet/IP, PROFINET and TCP/IP interfaces.",
+          "source_url": "https://www.keyence.com/products/vision/vision-sensor/iv3/models/iv3-600ca/",
+          "source_title": "IV3-600CA — Specifications",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "These features do not establish successful completeness inspection or correct plate/reject association; demonstrate both."
+        },
+        {
+          "claim": "Exact-model environmental limits",
+          "value": "IP67 except when specified polarizing filters are mounted; operating ambient 32–122°F, no freezing; 35–85% RH, no condensation.",
+          "source_url": "https://www.keyence.com/products/vision/vision-sensor/iv3/models/iv3-600ca/",
+          "source_title": "IV3-600CA — Environmental resistance and footnotes 16–17",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "The proposed 36–40°F is within the stated temperature range. Food-contact suitability and cleaning compatibility remain unqualified."
+        }
+      ],
+      "qualification_gaps": [
+        "Tray dimensions, row spacing, working distance, smallest detectable omission, lighting and acceptance tolerances remain undefined.",
+        "Camera count remains unknown; do not equate two inspection positions with two cameras.",
+        "Require plate-ID/row tracking, trigger/result handshake and fail-safe reject routing.",
+        "Required certifications, condensation control and cleaning compatibility are blocking questions."
+      ],
+      "next_action": "Arrange a sample-based trial across the single-tray line, including missing/wrong ingredients and natural variation. Require demonstrated inspection and reject tracking at approximately 135 acceptable trays/hour before human purchase approval."
+    },
+    {
+      "requirement_id": "ER11",
+      "manufacturer": "Advance Tabco",
+      "model": "TSS-304",
+      "product_url": "https://advancetabco.com/specs/flattop_openbase_premium.pdf",
+      "recommendation": "recommended",
+      "rationale": "Conditional recommendation for one workstation support table only, not a qualified sealing solution. Retain operator-performed closure and sealing; do not add an automatic lid applicator or select sealing equipment before packaging trials.",
+      "price": {
+        "claim": "Exact-model advertised purchase price",
+        "value": "USD 1,004.44 each",
+        "source_url": "https://www.katom.com/009-TSS304.html",
+        "source_title": "Advance Tabco TSS-304 — KaTom",
+        "retrieved_date": "2026-11-06",
+        "status": "supplier_claim",
+        "note": "Obtain a written delivered quotation including freight and tax. ([katom.com](https://www.katom.com/009-TSS304.html))"
+      },
+      "lead_time": {
+        "claim": "Confirmed stock and delivery lead time",
+        "value": null,
+        "source_url": null,
+        "source_title": null,
+        "retrieved_date": "2026-11-06",
+        "status": "unknown",
+        "note": "No confirmed exact-model delivery commitment obtained."
+      },
+      "technical_evidence": [
+        {
+          "claim": "Workstation dimensions",
+          "value": "TSS-304: 48 × 30-inch work surface; nominal height 35.5 inches.",
+          "source_url": "https://advancetabco.com/specs/flattop_openbase_premium.pdf",
+          "source_title": "Advance Tabco Premium Flat-Top Open-Base Work Tables, pages 1–2",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Exact model appears in the dimensional table; confirm conveyor alignment and operator reach. ([advancetabco.com](https://advancetabco.com/specs/flattop_openbase_premium.pdf))"
+        },
+        {
+          "claim": "Construction relevant to sanitation review",
+          "value": "14-gauge type 304 stainless top, stainless legs and cross-bracing; underside includes galvanized reinforcing channels secured with adhesive and weld studs.",
+          "source_url": "https://advancetabco.com/specs/flattop_openbase_premium.pdf",
+          "source_title": "Advance Tabco Premium Flat-Top Open-Base Work Tables, page 1",
+          "retrieved_date": "2026-11-06",
+          "status": "supplier_claim",
+          "note": "Do not treat this construction as proof of washdown or cleaning-chemical compatibility. ([advancetabco.com](https://advancetabco.com/specs/flattop_openbase_premium.pdf))"
+        }
+      ],
+      "qualification_gaps": [
+        "Tray/lid samples, closure mechanism, tooling and seal-integrity acceptance criteria remain unresolved.",
+        "Workstation footprint, ergonomic height, loading and conveyor interface require approval.",
+        "Refrigerated condensation exposure, cleaning compatibility and required food-contact/certification documentation require confirmation.",
+        "Manual closure/sealing capacity at the proposed throughput has not been demonstrated."
+      ],
+      "next_action": "Obtain a quantity-one quotation and sanitation documentation; trial actual filled trays and lids with the intended operator. Release the table only after layout approval, and defer any operator-actuated sealing device until the closure method is defined."
+    }
+  ],
+  "overall_uncertainties": [
+    "Date correction: the applicable current date is November 6, 2026, not November 5, 2026; retrieval dates reflect November 6.",
+    "Recommendations are sample-test selections, not production qualification or demonstrated throughput guarantees.",
+    "Exactly one candidate per requirement is supplied; additional alternatives are omitted to honor the batch limit.",
+    "Scope remains one cheese presentation tray and one cracker presentation tray. No additional robots, grape picker, lid applicator or automatic feeder are proposed.",
+    "Ingredient samples, robot/gripper geometry, sanitation requirements, installation jurisdiction and customer certifications remain unresolved.",
+    "Retrieval date is November 6, 2026; the requested November 5, 2026 is the previous day and has not been used to backdate live research.",
+    "Exactly one candidate per requirement is returned; alternatives are omitted to honor the batch limit.",
+    "Recommendations are conditional trial selections, not fully qualified equipment approvals.",
+    "Scope remains one apple presentation tray and one manual-grape presentation tray; spare inventory, grape automation and lid application equipment are excluded.",
+    "Neither selection validates the supplied 135 acceptable trays/hour planning case.",
+    "Tray and conveyor dimensions remain unresolved; reused supplier evidence does not qualify the final configuration.",
+    "The reused robot-platform evidence does not validate the three-arm cell layout or ingredient-specific end effectors.",
+    "Apple handling and the vision acceptance specification have not been demonstrated on representative product.",
+    "Retrieval date is November 6, 2026; the requested November 5, 2026 is the previous day, so evidence has not been backdated.",
+    "Exactly one candidate is returned as requested; no alternative or speculative sealer is added.",
+    "This recommendation covers the work surface only, not validation of the complete closure/sealing process."
+  ],
+  "human_decisions_required": [
+    "Approve sample trials and final purchasing only after food-contact, sanitation and robotic-picking acceptance.",
+    "Approve approximately 135 acceptable trays/hour, the extended production window and staffing for replenishment, manual grapes and manual closure/sealing.",
+    "Approve presentation capacity, mounting and any separately qualified fixtures without changing the confirmed line architecture.",
+    "Authorize any procurement overbuy separately; case quantities do not change the required operating quantity of one tray per requirement.",
+    "Approve actual product samples, tray footprint, usable capacity and operator/robot interfaces.",
+    "Approve food-contact documentation, sanitation procedure, refrigerated holding conditions and jurisdiction-specific requirements.",
+    "Approve reduced throughput, extended production window and staffing for replenishment, grapes and closure.",
+    "Confirm supplier quotation and delivery commitment; final purchasing remains a human decision.",
+    "Approve tray samples, single-tray pitch, station spacing, operator access, and a guarded layout before ordering.",
+    "Approve robot reach and cycle simulations, guarding, and food trials before selecting any arm or end effector.",
+    "Run apple end-effector trials and a vision feasibility study using real assembled trays before purchase.",
+    "Approve tray/lid specifications, sealing method and acceptance tests before selecting sealing equipment.",
+    "Approve sanitation, jurisdictional requirements, layout and operator safety.",
+    "Approve the approximately 135 acceptable trays/hour planning case, extended production window and staffing, including manual grapes.",
+    "Make the final purchasing decision after sample trials and a confirmed supplier quotation."
+  ]
+}

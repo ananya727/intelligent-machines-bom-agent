@@ -29,7 +29,16 @@ class RenderTests(unittest.TestCase):
             diagram.write_bytes(b"png-data")
             page=render_page(confirmed,bom,diagram)
         self.assertIn('src="data:image/png;base64,',page)
-        self.assertIn("Original Part 1 diagram",page)
+        self.assertIn("Process diagram used for this purchasing-agent run",page)
+
+    def test_supporting_roles_follow_requirement_categories_for_second_input(self):
+        requirement=EquipmentRequirement(id="ER1",process_step_id="S1",category="Cheese presentation tray",function="Present cheese",diagram_evidence="Drawn tray")
+        analysis=DiagramAnalysis(process_summary="Line",process_steps=[],equipment_requirements=[requirement],clarification_questions=[],extraction_uncertainties=[])
+        confirmed=ConfirmedRequirements(analysis=analysis,human_assumptions={})
+        unknown=Evidence(claim="price",value=None,source_url=None,source_title=None,retrieved_date=None,status="unknown")
+        candidate=Candidate(requirement_id="ER1",manufacturer="Maker",model="M1",product_url=None,recommendation="alternative",rationale="Needs evidence",price=unknown,lead_time=unknown,technical_evidence=[],qualification_gaps=["Qualification"],next_action="RFQ")
+        page=render_page(confirmed,BomResearch(candidates=[candidate],overall_uncertainties=[],human_decisions_required=[]))
+        self.assertIn("Supporting equipment",page)
 
 
 if __name__ == "__main__": unittest.main()
