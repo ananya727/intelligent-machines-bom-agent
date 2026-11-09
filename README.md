@@ -10,6 +10,14 @@ The self-contained example is published from `docs/index.html`. Reviewers can in
 
 The checked-in example is a real run against my Part 1 process diagram. It detected 11 process steps and 13 equipment requirements, researched one candidate for every requirement, preserved unsupported values as unknown, and generated the HTML deterministically. The webpage distinguishes 10 core process purchases from 3 supporting items without changing the input architecture.
 
+## Approach and reflection
+
+For Part 3, I approached the problem by breaking down the process I'd followed manually in Part 2 and identifying which steps could be automated. I kept the implementation fairly lightweight, using AI to interpret the diagram and research equipment, with structured data and deterministic code for generating the purchasing webpage.
+
+One thing that became clear was the importance of human review, particularly when confirming operating assumptions, evaluating certifications, and making purchasing decisions. The generated BOM is a starting point rather than a fully qualified purchasing list, since supplier pricing and lead times often require RFQs.
+
+I also ran the same workflow on a simplified version of my original process diagram to explore the feedback on reducing moving parts.
+
 ### Architecture comparison
 
 The second run uses the simpler Part 2 planning case: three robot arms instead of seven, one tray per index instead of two, manual grape placement, and manual lid closure rather than an automatic lid applicator. The agent preserved that input and extracted 9 process steps and 11 equipment requirements, compared with 11 steps and 13 requirements for the original diagram. The Part 2 model estimates approximately 135 acceptable trays/hour using a 22-second bottleneck, 2-second index, and 90% effectiveness. That lower rate reduces mechanisms and robot count, but the longer production window and staffing plan require customer approval before this architecture can replace the original higher-throughput case.
